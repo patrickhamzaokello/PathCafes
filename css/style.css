@@ -246,7 +246,27 @@ header .intro-text {
 	line-height: 24px;
 	margin: 15px 0 30px;
 }
+
+.food-image{
+	height: 300px;
+	width: 100%;
+	border-style: dashed;
+}
+#img-food{
+	margin-top: -600px;
+	margin-left: 650px;
+	position: relative;
+	height: 350px;
+	width: 500px;
+	padding: 20px;;
+}
 /* Menu Section */
+
+.menu-section{
+	/*background-color: #f6f6f6;*/
+	border-radius: 20px;
+	padding: 20px;
+}
 #restaurant-menu {
 	padding: 100px 0 60px 0;
 }
