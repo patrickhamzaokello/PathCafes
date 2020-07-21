@@ -1,0 +1,4671 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+/*
+01. Theme Typo
+02. Header
+	02.1 Top Strip
+		02.1.1 Top Info
+		02.1.2 Search
+	02.1 Logo
+	02.2 Navigation
+		02.2.1 SubMenu
+		02.2.1 MegaMenu
+03. Content
+
+	03.1 Blog
+		03.1.2 Blog Grid
+		03.1.3 Blog Large
+		03.1.4 Blog Detail
+ 
+	03.3 Default Pages Style
+		03.3.1 404
+		03.3.2 Services
+		03.3.3 No Search Result
+		03.3.4 Contact Us
+        03.3.5 PricePlan
+        03.3.6 Faq
+        03.3.7 About Us
+
+	03.4 Projects
+		03.4.1 Project Grid
+		03.4.2 Project Medium
+		03.4.3 Project Modren
+		03.4.4 Artist Detail
+
+	03.5 Team
+		03.5.1 Team Grid
+		03.5.2 Team Detail
+
+	03.6 Shop
+		03.6.1 Shop Grid
+		03.6.2 Shop Detail
+ 
+04. Sidebar Widget
+	04.1 Widget CATEGORY WIDGET
+	04.2 Widget Latest News
+	04.3 Widget Calendar Archive
+	04.4 Widget Text
+	04.5 Widget Recent Posts
+	04.7 Widget Intagram Photos
+	04.8 Popular Tags
+	04.9 User Links
+ 
+05. Footer
+    05.1 Footer Widgets
+    05.2 CopyRight
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ffffff;
+    color: #555555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: #222222;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+    margin: 0 0 8px;
+}
+h1 {
+    font-size: 26px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #222222;
+}
+p a {
+    color: #222222;
+}
+p {
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+a {
+    color: #222222;
+    text-decoration: none;
+}
+a:hover, a:focus, a:active {
+    outline: none;
+}
+ul {
+    margin-bottom: 0;
+}
+figure {
+    margin-bottom: 6px;
+    position: relative;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+strong {
+    color: #222222;
+}
+iframe {
+    border: none;
+    float: left;
+    width: 100%;
+}
+.wp-caption, .wp-caption-text, .gallery-caption, .bypostauthor {
+}
+.wp-caption.alignleft, .wp-caption.alignnone {
+    width: 100%;
+}
+select {
+    background-color: #f0eef0;
+    border: 1px solid #dfdfdf;
+    color: #555555;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    height: 40px;
+    padding: 8px 12px;
+    width: 100%;
+}
+label {
+    color: #6c8391;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+button {
+    border: none;
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    background-color: #f2f2f2;
+    border: none;
+    color: #aaa9a9;
+    display: inline-block;
+    font-size: 13px;
+    height: 30px;
+    line-height: 20px;
+    outline: none;
+    padding: 4px 6px;
+    vertical-align: middle;
+    box-shadow: none;
+}
+input[type="submit"] {
+    outline: none;
+}
+form p {
+    float: left;
+    position: relative;
+}
+form p span i {
+    color: #474747;
+    left: 16px;
+    position: absolute;
+    top: 13px;
+}
+option {
+    padding: 5px 15px;
+}
+li {
+    line-height: 28px;
+    list-style: inside none disc;
+}
+ul ul {
+    margin-left: 20px;
+}
+ol {
+    float: none;
+    list-style: outside none decimal;
+    padding-left: 15px;
+}
+ol ol {
+    margin-left: 20px;
+}
+ol li {
+    list-style: outside none decimal;
+    width: 100%;
+}
+table {
+    background-color: transparent;
+    max-width: 100%;
+}
+th {
+    text-align: left;
+}
+table {
+    margin-bottom: 15px;
+    width: 100%;
+}
+table > thead > tr > th, table > tbody > tr > th, table > tfoot > tr > th, table > thead > tr > td, table > tbody > tr > td, table > tfoot > tr > td {
+    border: 1px solid #dddddd;
+    line-height: 2.5;
+    padding-left: 3px;
+    text-align: center;
+    vertical-align: top;
+}
+table thead tr th {
+    border-top: 1px solid #dddddd;
+    text-align: center;
+    text-transform: capitalize;
+}
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+    border-top: 1px solid #dddddd;
+}
+table > thead > tr > th {
+    border-bottom: 2px solid #dddddd;
+    vertical-align: bottom;
+}
+table > caption + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > th, table > thead:first-child > tr:first-child > th, table > caption + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > td, table > thead:first-child > tr:first-child > td {
+    border-bottom: 0 none;
+}
+table > tbody + tbody {
+    border-top: 2px solid #dddddd;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 6px 10px;
+}
+p ins {
+    color: #999;
+}
+dl dd 	{ margin-left: 20px; }
+address { font-style: italic; }
+.hotmeal-main-section {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.hotmeal-main-content 	    { padding: 100px 0px 60px 0px; }
+.hotmeal-right-section 	    { float: right; }
+.hotmeal-left-section 	    { float: left; }
+.hotmeal-main-wrapper,.hotmeal-main-content,
+.hotmeal-main-header,#hotmeal-header {
+    float: left;
+    width: 100%;
+}
+/* Header */
+.hotmeal-header-one {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.7);
+    border-bottom: 2px dashed #989899;
+    padding: 15px 0px 27px;
+}
+.logo {
+    float: left;
+    width: 100%;
+}
+/* Navigation */
+a.menu-link {
+    color: #222222;
+    display: none;
+}
+.menu-link span {
+  border-bottom: solid 3px #fff;
+  border-top: double 10px #fff;
+  float: right;
+  height: 17px;
+  margin: 0 5px 0px 0;
+  width: 30px;
+}
+.js .menu > ul ul.active {
+  margin: 0;
+  max-height: 55em;
+  padding: 0;
+}
+.menu.active {
+  max-height: 100em;
+  width: 100%;
+}
+span.has-subnav {
+  display: none;
+  font-size: 1em;
+  position: absolute;
+  right: 0;
+  padding: 0;
+  top: 0;
+  cursor: pointer;
+  width: 52px;
+  text-align: center;
+  height: 100%;
+  line-height: 2.7;
+  border-left: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  background-color: #f9f9f9;
+  font-size: 20px;
+}
+.navbar-nav > li {
+    margin: 0px 23px;
+    position: relative;
+    list-style: none;
+}
+.navbar-nav > li:first-child { margin-left: 0px;}
+.navbar-nav > li:last-child { margin-right: 0px;}
+.navbar-nav > li:last-child a { padding-right: 0px;}
+.navbar {
+    background: none;
+    border: none;
+    float: left;
+    margin-bottom: 0px;
+    min-height: auto;
+}
+.navbar .navbar-collapse { padding-left: 8px; }
+.navbar-nav > li > a {
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 23px 20px 12px;
+    position: relative;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+.navbar-nav > li > a:before {
+    content: '';
+    position: absolute;
+    right: -23px;
+    top: 29px;
+    width: 1px;
+    height: 9px;
+    background: rgba(255,255,255,0.5);
+}
+.navbar-nav > li:last-child > a:before { content: none;}
+.navbar-nav > li:first-child { padding-left: 0px; }
+.navbar-nav > li:last-child { padding-right: 0px; }
+.navbar-nav li:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+.navbar-nav .sub-menu {
+    background: rgba(27,27,27,0.9);
+    left: 0;
+    margin: 38px 0px 0px 0px;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    width: 200px;
+    z-index: 999;
+    border-bottom: 2px solid;
+    padding: 14px 0px 15px;
+}
+.navbar-nav .sub-menu .sub-menu {
+    left: 100%;
+    top: 0%;
+    margin-left: 4px;
+    margin-top: 0px;
+}
+.navbar-nav .sub-menu > li {
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    padding: 0px 15px;
+}
+.navbar-nav .sub-menu li a {
+    color: #858585;
+    float: left;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    padding: 6px 15px;
+    width: 100%;
+    position: relative;
+}
+.navbar-nav .sub-menu li > a i {
+    position: absolute;
+    right: 25px;
+    top: 13px;
+    font-size: 12px;
+    opacity: 0;
+}
+.navbar-nav .sub-menu li:hover > a i {
+    opacity: 1;
+    right: 15px;
+}
+.navbar-nav .sub-menu li a:hover { background: rgba(34,34,34,0.9);}
+/*user list*/
+.hotmeal-user-list {
+    float: right;
+    margin: 0px 0px 0px 0px;
+}
+.hotmeal-user-list li {
+    float: left;
+    list-style: none;
+    margin: 22px 0px 0px 39px;
+    position: relative;
+}
+.hotmeal-user-list li:before {
+    content: '';
+    position: absolute;
+    left: -19px;
+    top: 12px;
+    width: 1px;
+    height: 9px;
+    background-color: #ffffff;
+    opacity: 0.5; 
+}
+.hotmeal-user-list li:first-child:before { content: none;}
+.hotmeal-user-list li a {
+    font-size: 15px;
+    color: #fff;
+}
+.hotmeal-user-list li a { position: relative;}
+.hotmeal-user-list li a span {
+    position: absolute;
+    right: -7px;
+    top: -3px;
+    color: #ffffff;
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 10px;
+    padding: 2px 0px 0px 1px;
+}
+/* Search Modal */
+.searchmodal form {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.searchmodal .modal-dialog { margin: 300px auto;}
+.searchmodal .modal-body {
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+    position: relative;
+}
+.searchmodal form input[type="text"] {
+    float: left;
+    width: 100%;
+    background-color: #ffffff;
+    color: #555;
+    font-size: 20px;
+    font-style: italic;
+    height: 60px;
+    padding: 6px 30px;
+    border-radius: 40px;
+}
+.searchmodal form input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+}
+.searchmodal form i {
+    position: absolute;
+    right: 28px;
+    top: 20px;
+    color: #999;
+    font-size: 18px;
+    z-index: 0;
+}
+.hotmeal-close-btn {
+    position: absolute;
+    right: 40%;
+    top: -50px;
+    color: #999;
+    background-color: #ffffff;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px 100px 0px 0px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 8px;
+}
+.hotmeal-cart-box {
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    background: rgba(34,34,34,0.9);
+    padding: 28px;
+    width: 300px;
+    z-index: 1;
+    margin-top: 40px;
+    color: #ffffff;
+    display: none;
+}
+.hotmeal-cart-box p { margin: 0px; }
+/*hotmeal-banner*/
+.hotmeal-banner {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.hotmeal-banner-caption {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 100%;
+    margin: -168px 0px 0px;
+}
+.hotmeal-banner-text {
+    float: left;
+    width: 84%;
+    position: relative;
+    padding: 97px 0px 0px;
+}
+.hotmeal-banner-text strong {
+    color: #ffffff;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 125px;
+    text-align: center;
+    height: 125px;
+    background: url(images/banner-shape-one.png);
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 38px 0px 0px;
+}
+.hotmeal-banner-text strong small { font-size: 16px;}
+.hotmeal-banner-text strong span {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+}
+.hotmeal-banner-text h1 {
+    font-size: 60px;
+    margin: 0px 0px 2px;
+    letter-spacing: 2.7px;
+    line-height: 1;
+}
+.hotmeal-banner-text h2 {
+    font-size: 65px;
+    margin: 0px 0px 1px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 2.9px;
+}
+.hotmeal-banner-text h3 {
+    font-size: 34px;
+    letter-spacing: 3.1px;
+    margin: 0px 0px 25px;
+    color: #ffffff;
+    line-height: 1.3;
+}
+.hotmeal-banner-text p {
+    margin: 0px 0px 34px;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+}
+.hotmeal-banner-btn {
+    float: left;
+    width: 121px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    position: relative;
+    padding: 10px 0px;
+    margin: 0px 30px 10px 0px;
+}
+.hotmeal-banner-btn:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 74%;
+    height: 1px;
+    background-color: #ffffff;
+}
+.hotmeal-banner-btn:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 25px;
+    background-color: #ffffff;
+}
+.hotmeal-banner-btn:hover:before {
+    left: 100%;
+    margin: 0px 0px 0px -74%;
+}
+.hotmeal-banner-btn:hover:after {
+    top: 100%;
+    margin: -25px 0px 0px;
+}
+.hotmeal-banner-btn:hover span:before {
+    right: 100%;
+    margin: 0px -74% 0px 0%;
+}
+.hotmeal-banner-btn:hover span:after {
+    bottom: 100%;
+    margin: 0px 0px -25px;
+}
+.hotmeal-banner-btn span {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+}
+.hotmeal-banner-btn span:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 74%;
+    height: 1px;
+    background-color: #ffffff;
+}
+.hotmeal-banner-btn span:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 1px;
+    height: 25px;
+    background-color: #ffffff;
+}
+/*Content*/
+/*Fancy-title*/
+.hotmeal-fancy-title {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 0px 0px 70px;
+}
+.hotmeal-fancy-title span {
+    font-size: 35px;
+    margin: 0px 0px 1px;
+    display: inline-block;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+.hotmeal-fancy-title h2 {
+    font-size: 30px;
+    margin: 0px 0px 13px;
+    letter-spacing: 1.1px;
+    line-height: 0.9;
+    font-weight: 600;
+}
+/*Fancy-title*/
+.hotmeal-special-flavours-text {
+    float: left;
+    width: 100%;
+}
+.hotmeal-special-flavours-text .hotmeal-fancy-title {
+    text-align: left;
+    margin: 0px 0px 17px;
+}
+.hotmeal-special-flavours-text p {
+    margin: 0px 0px 14px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    float: left;
+}
+.hotmeal-learn-btn {
+    float: left;
+    margin: 0px 0px 0px;
+    color: #555;
+    letter-spacing: 0.3px;
+    padding: 10px 20px;
+    position: relative;
+}
+.hotmeal-learn-btn:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 74%;
+    height: 1px;
+    background-color: #999999;
+}
+.hotmeal-learn-btn:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 25px;
+    background-color: #999999;
+}
+.hotmeal-learn-btn:hover:before {
+    left: 100%;
+    margin: 0px 0px 0px -74%;
+}
+.hotmeal-learn-btn:hover:after {
+    top: 100%;
+    margin: -25px 0px 0px
+}
+.hotmeal-learn-btn:hover .btn-shape:before {
+    right: 100%;
+    margin: 0px -74% 0px 0%;
+}
+.hotmeal-learn-btn:hover .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -25px
+}
+.btn-shape {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+.btn-shape:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 74%;
+    height: 1px;
+    background-color: #999999;
+}
+.btn-shape:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 1px;
+    height: 25px;
+    background-color: #999999;
+}
+/*hotmeal-flavours-thumb*/
+.hotmeal-flavours-thumb,.hotmeal-flavours-thumb > a,.hotmeal-flavours-thumb a img {
+    float: left;
+    width: 100%;
+}
+.hotmeal-flavours-thumb { margin: 0px;}
+.hotmeal-flavours-thumb > a { position: relative;}
+.hotmeal-flavours-thumb > a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(34,34,34,0) 0%, rgba(34,34,34,1) 99%, rgba(34,34,34,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(34,34,34,0) 0%,rgba(34,34,34,1) 99%,rgba(34,34,34,1) 100%);
+    background: linear-gradient(to bottom, rgba(34,34,34,0) 0%,rgba(34,34,34,1) 99%,rgba(34,34,34,1) 100%);
+    opacity: 0.7;
+}
+.hotmeal-flavours-thumb figcaption {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding: 0px 0px 23px 30px;
+}
+.hotmeal-flavours-thumb figcaption span {
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #eb2d2d;
+    display: inline-block;
+    padding: 4px 10px 5px;
+    border-radius: 2px;
+    margin: 0px 0px 6px;
+    letter-spacing: 0.5px;
+}
+.hotmeal-flavours-thumb figcaption h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0px 0px 4px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.hotmeal-flavours-thumb figcaption h2 a { color: #ffffff;}
+.hotmeal-flavours-thumb figcaption p {
+    font-size: 12px;
+    font-weight: 600;
+    width: 234px;
+    color: #dddddd;
+    margin: 0px;
+    letter-spacing: 0.4px;
+}
+/*hotmeal-flavours-list*/
+.hotmeal-flavours-thumb,.hotmeal-flavours-list { padding: 25px 0px 0px;}
+.hotmeal-flavours-list,.hotmeal-flavours-list ul li,.hotmeal-flavours-list figure a,.hotmeal-flavours-list figure a img {
+    float: left;
+    width: 100%;
+}
+.hotmeal-flavours-list ul li {
+    list-style: none;
+    margin: 0px 0px 10px;
+}
+.hotmeal-flavours-list figure {
+    float: left;
+    width: 95px;
+    margin: 0px;
+}
+.hotmeal-flavours-list figure ~ .hotmeal-flavours-list-text { padding: 7px 0px 0px 115px;}
+.hotmeal-flavours-list-text h6 {
+    margin: 0px 0px 8px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.hotmeal-flavours-list-text p {
+    line-height: 22px;
+    margin: 0px;
+}
+/*Services Grid*/
+.hotmeal-service-grid-thumb,.hotmeal-service,.hotmeal-service-grid-text {
+    float: left;
+    width: 100%;
+}
+.hotmeal-service-grid-thumb { position: relative;}
+.hotmeal-service-grid-thumb:before {
+    content: '';
+    background: url(extra-images/service-grid-thumb.jpg);
+    float: left;
+    width: 462px;
+    height: 637px;
+    margin:-11px 0px 0px -92px;
+}
+.hotmeal-service > ul > li {
+    list-style: none;
+    margin: 0px -4px 40px 0px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.hotmeal-service-grid-text {
+    text-align: center;
+    position: relative;
+    margin: 30px 0px 0px;
+    padding: 49px 40px 23px;
+}
+.hotmeal-service-grid-text:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 89%;
+    height: 1px;
+    background-color: #999;
+}
+.hotmeal-service-grid ul li:hover .hotmeal-service-grid-text:before {
+    left: 100%;
+    margin: 0px 0px 0px -89%;
+}
+.hotmeal-service-grid ul li:hover .hotmeal-service-grid-text .btn-shape:before {
+    right: 100%;
+    margin: 0px -89% 0px 0px;
+}
+.hotmeal-service-grid ul li:hover .hotmeal-service-grid-text .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -159px;
+}
+.hotmeal-service-grid ul li:hover .hotmeal-service-grid-text:after {
+    top: 100%;
+    margin: -159px 0px 0px;
+}
+.hotmeal-service-grid-text:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 159px;
+    background-color: #999;
+}
+.hotmeal-service-grid-text .btn-shape { pointer-events: none;}
+.hotmeal-service-grid-text .btn-shape:before { width: 89%;}
+.hotmeal-service-grid-text .btn-shape:after { height: 159px;}
+.hotmeal-service-grid-text i {
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid #7c7c7c;
+    padding: 9px 0px 0px;
+    font-size: 39px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin: 0px 0px 0px -28px;
+}
+.hotmeal-service-grid ul li:hover .hotmeal-service-grid-text i { color: #ffffff;}
+.hotmeal-service-grid-text h5 {
+    text-transform: uppercase;
+    margin: 0px 0px 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.hotmeal-service-grid-text p {
+    margin: 0px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+}
+/*menu-list-transperant*/
+.menu-list-transperant {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.88);
+}
+.menu-list-transperant:before {
+    content: '';
+    background: url(images/menu-list-shape1.png);
+    position: absolute;
+    left: 0px;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+    background-position: center;
+}
+.menu-list-transperant:after {
+    content: '';
+    background: url(images/menu-list-shape2.png);
+    position: absolute;
+    left: 0px;
+    bottom: -47px;
+    width: 100%;
+    height: 50px;
+    background-position: center;
+}
+.hotmeal-fancy-title.color h2 { color: #fff;}
+/*hotmeal-menu-list*/
+.hotmeal-menu,.hotmeal-filterable,.hotmeal-menu-list-text {
+    float: left;
+    width: 100%;
+}
+.hotmeal-filterable {
+    text-align: center;
+    margin: 0px 0px 30px;
+}
+.hotmeal-menu > ul > li {
+    list-style: none;
+    margin: 0px -4px 30px 0px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.hotmeal-filterable ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 18px 20px;
+}
+.hotmeal-filterable ul li a {
+    text-transform: uppercase;
+    display: inline-block;
+    color: #bbbbbb;
+    border: 1px dashed rgba(255,255,255,0.4);
+    padding: 9px 17px 7px;
+}
+.hotmeal-filterable ul li a.is-checked { border: 1px solid rgba(185,149,99,0.4);}
+.hotmeal-filterable ul li a i {
+    font-size: 19px;
+    float: left;
+    margin: 4px 10px 0px 0px;
+}
+.hotmeal-menu-list-text {
+    background: rgba(255,255,255,0.04);
+    border: 1px dashed rgba(255,255,255,0.4);
+    padding: 23px 28px 23px 30px;
+}
+#menu-color{
+    background-color: #ffffff; /*#2a1e1e;* ===== goood color===*/
+}
+.hotmeal-menu-list-text h5 {
+    float: left;
+    
+    margin: 0px 0px 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+.hotmeal-menu-list-text h5  { 
+    color: #cbcbcb;
+}
+#menu-item{
+    background-color: #2a1e1e;
+}
+.hotmeal-menu-list-text span {
+    float: right;
+    font-size: 22px;
+    margin: 3px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hotmeal-menu-list-text p {
+    color: #b6b6b6;
+    margin: 0px;
+    float: left;
+    letter-spacing: 0.6px;
+}
+/*Team Detail*/
+.hotmeal-team,.hotmeal-team-grid-wrap,.hotmeal-team-grid-text,.hotmeal-team-grid figure,
+.hotmeal-team-grid figure > a,.hotmeal-team-grid figure > a img {
+    float: left;
+    width: 100%;
+}
+.hotmeal-team > ul > li {
+    list-style: none;
+    margin: 0px -4px 30px 0px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.hotmeal-team-grid figure {
+    margin: 0px 0px 27px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.hotmeal-team-grid figure > a { position: relative;}
+.hotmeal-team-grid figure > a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.hotmeal-team-grid ul li:hover figure a:before { opacity: 0.9;}
+.hotmeal-team-grid figure figcaption {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    margin: 0px 0px -26px;
+    bottom: 0%;
+    opacity: 0;
+}
+.hotmeal-team-grid ul li:hover figure figcaption {
+    bottom: 50%;
+    opacity: 1;
+}
+.hotmeal-team-social {
+    display: inline-block;
+    margin: 0px;
+}
+.hotmeal-team-social li {
+    list-style: none;
+    float: left;
+    margin: 0px 10px;
+}
+.hotmeal-team-social a {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    padding: 6px 0px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+.hotmeal-team-grid-wrap {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+.hotmeal-team-grid-text h5 {
+    margin: 0px 0px 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.7px;
+}
+.hotmeal-team-grid-text > span {
+    font-size: 16px;
+    letter-spacing: 0.7px;
+}
+.hotmeal-team-social li a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+}
+.hotmeal-team-social li:hover a:before {
+    left: 100%;
+    margin: 0px 0px 0px -30px;
+}
+.hotmeal-team-social li:hover a .btn-shape:before {
+    right: 100%;
+    margin: 0px -30px 0px 0px;
+}
+.hotmeal-team-social li:hover a .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -30px;
+}
+.hotmeal-team-social li:hover a:after {
+    top: 100%;
+    margin: -30px 0px 0px;
+}
+.hotmeal-team-social li a:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 30px;
+    background-color: #fff;
+}
+.hotmeal-team-social li a .btn-shape:before {
+    width: 30px;
+    background-color: #ffffff;
+}
+.hotmeal-team-social li a .btn-shape:after {
+    height: 30px;
+    background-color: #ffffff;
+}
+/*hotmeal-reserve-table*/
+.hotmeal-reserve-table form,.hotmeal-reserve-table form input[type="text"],.hotmeal-reserve-table form input[type="email"],
+.hotmeal-reserve-table form input[type="number"],.hotmeal-reserve-table form textarea,.hotmeal-table-thumb figure,
+.hotmeal-table-thumb figure img {
+    float: left;
+    width: 100%;
+}
+.hotmeal-reserve-table {
+    float: left;
+    width: 56%;
+    padding: 0px 15px 0px 0px;
+}
+.hotmeal-reserve-table .hotmeal-fancy-title {
+    text-align: left;
+    margin: 0px 0px 18px;
+}
+.hotmeal-reserve-table p {
+    margin: 0px 0px 32px;
+    letter-spacing: 0.5px;
+    width: 95%;
+    float: left;
+}
+.hotmeal-reserve-table form ul { margin: 0px -15px;}
+.hotmeal-reserve-table form ul li {
+    list-style: none;
+    float: left;
+    width: 50%;
+    margin: 0px 0px 30px;
+    padding: 0px 15px;
+}
+.hotmeal-reserve-table form ul li.full-form { width: 100%;}
+.hotmeal-reserve-table form input[type="text"],
+.hotmeal-reserve-table form input[type="email"],
+.hotmeal-reserve-table form input[type="number"],
+.hotmeal-reserve-table form textarea {
+    background-color: transparent;
+    height: 46px;
+    font-size: 14px;
+    color: #555555;
+    padding-left: 20px;
+    letter-spacing: 0.2px;
+    border: 1px dashed #999999;
+}
+.hotmeal-reserve-table form textarea {
+    height: 116px;
+    color: #000;
+    padding-top: 13px;
+}
+.submit {
+    float: left;
+    margin: 0px;
+    position: relative;
+}
+.submit:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 75%;
+    height: 1px;
+    background-color: #999;
+}
+.submit:hover:before {
+    left: 100%;
+    margin: 0px 0px 0px -75%;
+}
+.submit:hover span:before {
+    right: 100%;
+    margin: 0px -75% 0px 0px;
+}
+.submit:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 25px;
+    background-color: #999;
+}
+.submit:hover:after {
+    top: 100%;
+    margin: -25px 0px 0px;
+}
+.submit:hover span:after {
+    bottom: 100%;
+    margin: 0px 0px -25px;
+}
+.submit input[type="submit"] {
+    padding: 7px 26px 5px;
+    color: #555555;
+    background-color: transparent;
+    border: none;
+}
+.submit span {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.submit span:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 75%;
+    height: 1px;
+    background-color: #999;
+}
+.submit span:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 1px;
+    height: 25px;
+    background-color: #999;
+}
+.hotmeal-table-thumb {
+    float: left;
+    width: 44%;
+    padding: 28px 0px 0px 15px;
+}
+.hotmeal-table-thumb figure {
+    margin: 0px;
+    padding: 0px 30px 30px 0px;
+}
+.hotmeal-table-thumb figure:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 96%;
+    height: 96%;
+    background-color: #f5f5f5;
+    z-index: -1;
+}
+/*Testimonial*/
+.hotmeal-testimonial figure img,.hotmeal-testimonial {
+    float: left;
+    width: 100%;
+}
+.hotmeal-testimonial { 
+    background-color: #ffffff;
+    position: relative;
+}
+.testimonial-transparent {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: #000;
+    opacity: 0.88;
+}
+.hotmeal-testimonial-wrap {
+    width: 83.33333333%;
+    margin: 0 auto;
+}
+.hotmeal-testimonial:before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -30px;
+    width: 94%;
+    opacity: 0.15;
+    height: 30px;
+    background-color: #afafaf;
+}
+.hotmeal-testimonial:after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: -16px;
+    width: 97%;
+    opacity: 0.15;
+    height: 16px;
+    background-color: #fff;
+}
+.hotmeal-testimonial figure {
+    float: left;
+    width: 400px;
+    margin: 0px;
+}
+.hotmeal-testimonial figure ~ .hotmeal-testimonial-text {
+    margin: 0px 0px 0px 400px;
+    padding: 37px 30px 0px;
+    position: relative;
+}
+.hotmeal-testimonial-text i {
+    position: absolute;
+    right: 30px;
+    top: 45px;
+    font-size: 42px;
+    opacity: 0.5;
+}
+.hotmeal-testimonial-text h2 {
+    margin: 0px 0px 30px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.hotmeal-testimonial-text p {
+    margin: 0px;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+}
+.hotmeal-info {
+    float: right;
+    margin: 18px 0px 0px;
+}
+.hotmeal-info h5 {
+    margin: 0px 0px 2px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.hotmeal-info span { font-size: 10px;}
+.hotmeal-testimonial .slick-arrow {
+    position: absolute;
+    right: 50%;
+    bottom: 46px;
+    margin: 0px -260px 0px 0px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+    color: #999999;
+}
+.hotmeal-testimonial .slick-arrow.slick-arrow-left { margin: 0px -164px 0px 0px;}
+.hotmeal-testimonial .slick-dots {
+    bottom: 49px;
+    left: auto;
+    right: 0px;
+    width: 58%;
+}
+.hotmeal-testimonial .slick-dots li button {
+    background-color: #d6d6d6;
+    width: 8px;
+    border: none;
+    height: 8px;
+    border-radius: 100%;
+}
+.hotmeal-testimonial .slick-dots li.slick-active button {
+    width: 12px;
+    height: 12px;
+}
+/*hotmeal-blog-medium*/
+.hotmeal-blog,.hotmeal-blog-medium figure a,.hotmeal-blog-medium figure a img {
+    float: left;
+    width: 100%;
+}
+.hotmeal-blog > ul > li {
+    list-style: none;
+    margin: 0px -4px 30px 0px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.hotmeal-blog-medium figure {
+    float: right;
+    margin: 0px;
+    width: 458px;
+    overflow: hidden;
+}
+.hotmeal-blog-medium figure a { position: relative;}
+.hotmeal-blog-medium figure a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.hotmeal-blog-medium ul li:hover figure a:before { opacity: 0.9;}
+.hotmeal-blog-medium .hotmeal-blog-medium-layer:hover figure a:before { opacity: 0.9;}
+.hotmeal-blog-medium-text {
+    width: 300px;
+    padding: 45px 28px 50px 30px;
+    background-color: #ffffff;
+    float: left;
+    line-height: 1;
+    box-shadow: 0 0 15px rgba(0,0,0,0.10);
+    margin: 50px -203px 0 0px;
+    position: relative;
+}
+.hotmeal-blog-medium-text span {
+    font-size: 10px;
+    display: inline-block;
+    margin: 0px 0px 2px;
+    text-transform: uppercase;
+}
+.hotmeal-blog-medium-text h5 {
+    font-weight: 600;
+    margin: 0px 0px 16px;
+    letter-spacing: 0.6px;
+}
+.hotmeal-blog-medium-text p {
+    margin: 0px 0px 21px;
+    letter-spacing: 0.5px;
+}
+.hotmeal-simple-btn {
+    float: left;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 0px 0px 4px;
+}
+.hotmeal-simple-btn i {
+    float: right;
+    margin: 0px 0px 0px 9px;
+}
+.hotmeal-simple-btn:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 16px;
+    bottom: 0px;
+    height: 1px;
+    background-color: #222;
+}
+.hotmeal-blog ul li:hover .hotmeal-simple-btn:before { width: 74px;}
+.hotmeal-blog-medium .hotmeal-blog-medium-layer:hover .hotmeal-simple-btn:before { width: 74px;}
+.hotmeal-blog-medium .hover-btn {
+    right: 0%;
+    opacity: 0;
+}
+.hotmeal-blog-medium ul li:hover .hover-btn {
+    right: 50%;
+    opacity: 1;
+}
+.hotmeal-blog-medium .hotmeal-blog-medium-layer:hover .hover-btn {
+    right: 50%;
+    opacity: 1;
+}
+.hover-btn {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    color: #fff;
+    font-size: 21px;
+    padding: 13px 0px 0px;
+}
+.hotmeal-blog-medium .hover-btn { margin: -27px -128px 0px 0px;}
+.hover-btn:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 45px;
+    height: 1px;
+    background-color: #fff;
+}
+.hover-btn:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 45px;
+    background-color: #fff;
+}
+.hover-btn small {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+.hover-btn small:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 45px;
+    height: 1px;
+    background-color: #fff;
+}
+.hover-btn small:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 1px;
+    height: 45px;
+    background-color: #fff;
+}
+.hotmeal-blog-medium-slide { margin-bottom: 97px;}
+.hotmeal-blog-medium-slide .slick-dots {
+    bottom: 0px;
+}
+.hotmeal-blog-medium-slide .slick-dots li button {
+    background-color: #d6d6d6;
+    width: 8px;
+    border: none;
+    height: 8px;
+    border-radius: 100%;
+}
+.hotmeal-blog-medium-slide .slick-dots li.slick-active button {
+    width: 12px;
+    height: 12px;
+}
+/*hotmeal-partner*/
+.hotmeal-partner,.hotmeal-partner ul {
+    float: left;
+    width: 100%;
+}
+.hotmeal-partner ul li {
+    float: left;
+    width: 25%;
+    padding: 20px 0px 19px;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    border-right: 2px dashed #989899;
+}
+.hotmeal-partner ul li:nth-child(4n) { border-right: none;}
+.hotmeal-partner ul li:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    border-top: 2px dashed #989899;
+}
+.hotmeal-partner ul li:last-child:before,
+.hotmeal-partner ul li:nth-last-of-type(2):before,
+.hotmeal-partner ul li:nth-last-of-type(3):before,
+.hotmeal-partner ul li:nth-last-of-type(4):before {
+    content: none;
+}
+.hotmeal-partner ul li a { opacity: 0.4;}
+.hotmeal-partner ul li:hover a { opacity: 1;}
+/*hotmeal-footer*/
+#hotmeal-footer,.hotmeal-footer-widget {
+    float: left;
+    width: 100%;
+}
+.hotmeal-footer-heading {
+    text-align: center;
+    width: 56%;
+    margin: 0 auto 70px;
+}
+.hotmeal-footer-widget .widget { margin: 0px 0px 40px;}
+.hotmeal-footer-widget { padding: 0px 0px 40px;}
+.hotmeal-footer-one {
+    background-image: url("extra-images/footer-back-img.jpg");
+    background-position: center;
+    padding: 38px 0px 0px;
+    margin: 42px 0px 0px;
+    position: relative;
+}
+.hotmeal-footer-one:before {
+    content: '';
+    background: url(images/footer-shape.png);
+    position: absolute;
+    left: 0px;
+    top: -42px;
+    height: 42px;
+    width: 100%;
+    background-position: center;
+    opacity: 0.96;
+}
+.hotmeal-footer-transparent {
+    position: absolute;
+    background: url(images/footer-back-transparent.png);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0.95;
+}
+.hotmeal-footer-heading .logo { margin: 0px 0px 23px;}
+.hotmeal-footer-heading p {
+    color: #999;
+    margin: 0px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
+/*footer widget*/
+.footer-widget-title {
+    float: left;
+    width: 100%;
+    position: relative;
+    line-height: 0.8;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 0px 0px 11px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0px 0px 34px;
+}
+.footer-widget-title:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 32px;
+    height: 1px;
+}
+.widget_latest_post ul,
+.widget_latest_post ul li {
+    float: left;
+    width: 100%;
+}
+.widget_latest_post ul li {
+    list-style: none;
+    margin: 0px 0px 20px;
+    border-bottom: 2px dashed rgba(255,255,255,0.1);
+    padding: 0px 0px 14px;
+}
+.widget_latest_post h6 {
+    font-size: 15px;
+    margin: 0px 0px 1px;
+    letter-spacing: 0.6px;
+}
+.widget_latest_post h6 a { color: #999;}
+.widget_latest_post time { letter-spacing: 0.5px;}
+.widget_latest_post ul li:hover h6 a { color: #fff;}
+.widget_latest_post ul li:last-child {
+    border-bottom: none;
+    margin: 0px;
+    padding: 0px;
+}
+/*widget_links*/
+.widget_links ul li {
+    float: left;
+    width: 50%;
+    list-style: none;
+    margin: 0px 0px 16px;
+}
+.widget_links ul li a {
+    display: block;
+    margin: 0px;
+    color: #999;
+    line-height: 23px;
+    letter-spacing: 0.9px;
+}
+.widget_links ul li:hover a {
+    color: #ffffff;
+    padding-left: 10px;
+}
+/*widget_newsletter*/
+.widget_newsletter form,.widget_newsletter form ul li,.widget_newsletter form input[type="text"],
+.widget_newsletter form input[type="email"] {
+    float: left;
+    width: 100%;
+}
+.widget_newsletter p {
+    color: #999;
+    margin: 0px 0px 23px;
+    letter-spacing: 0.7px;
+}
+.widget_newsletter form ul li {
+    margin: 0px 0px 25px;
+    list-style: none;
+}
+.widget_newsletter form ul li:last-child { margin: 0px;}
+.widget_newsletter form input[type="text"],
+.widget_newsletter form input[type="email"] {
+    float: left;
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    font-size: 12px;
+    color: #999;
+    padding-left: 20px;
+    letter-spacing: 0.2px;
+    border: 2px dashed #505050;
+}
+.widget_newsletter .submit span {
+    z-index: 0;
+    cursor: pointer;
+}
+.widget_newsletter .submit input[type="submit"] { color: #999;}
+.widget_newsletter .submit:hover input[type="submit"] { color: #ffffff;}
+.widget_newsletter .submit:hover:before,.widget_newsletter .submit:hover:after,
+.widget_newsletter .submit:hover span:before,.widget_newsletter .submit:hover span:after {
+    background-color: #ffffff;
+}
+.widget_newsletter .submit:hover:after {
+    margin: -25px 0px 0px;
+}
+.widget_newsletter .submit:hover span:after {
+    margin: 0px 0px -25px;
+}
+/*hotmeal-copyright*/
+.hotmeal-copyright {
+    float: left;
+    width: 100%;
+    border-top: 2px dashed rgba(255,255,255,0.1);
+    text-align: center;
+    padding: 22px 0px 24px;
+}
+.hotmeal-copyright p {
+    color: #999999;
+    margin: 0px;
+    letter-spacing: 0.7px;
+}
+/*hotmeal-subheader*/
+.hotmeal-subheader,.hotmeal-subheader-text,.hotmeal-breadcrumb {
+    float: left;
+    width: 100%;
+}
+.hotmeal-subheader {
+    position: relative;
+    background-image: url("extra-images/subheader-img.jpg");
+    padding: 95px 0px 0px;
+    background-position: center;
+    text-align: center;
+}
+.hotmeal-subheader-transparent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.hotmeal-subheader-text { padding: 56px 0px 67px; }
+.hotmeal-subheader-text span {
+    display: block;
+    font-size: 24px;
+    letter-spacing: 0.9px;
+    margin: 0px 0px 3px;
+}
+.hotmeal-subheader-text h1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0px 0px 17px;
+    line-height: 1;
+    letter-spacing: 0.8px;
+}
+.hotmeal-subheader-text p{
+    margin: 0px;
+    color: #bbbbbb;
+    letter-spacing: 0.5px;
+    width: 43%;
+    display: inline-block;
+}
+.hotmeal-breadcrumb {
+    padding: 11px 0px 6px;
+    background: rgba(0,0,0,0.7);
+}
+.hotmeal-breadcrumb ul { display: inline-block;}
+.hotmeal-breadcrumb ul li {
+    float: left;
+    margin: 0px;
+    list-style: none;
+    letter-spacing: 0.4px;
+    padding: 0px 16px;
+    position: relative;
+}
+.hotmeal-breadcrumb ul li:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    position: absolute;
+    right: -2px;
+    top: 0px;
+    color: #fff;
+}
+.hotmeal-breadcrumb ul li:last-child:before { content: none;}
+.hotmeal-breadcrumb ul li a { color: #ffffff;}
+/*Blog Detail*/
+.hotmeal-blog-thumb,.hotmeal-blog-heading,.hotmeal-blog-option,.hotmeal-rich-editor,blockquote,
+.hotmeal-post-tags {
+    float: left;
+    width: 100%;
+}
+.hotmeal-blog-thumb { margin: 0px 0px 28px;}
+.hotmeal-blog-heading { margin: 0px 0px 18px;}
+.hotmeal-blog-heading h2 {
+    margin: 0px 0px 12px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 0.8;
+    letter-spacing: 0.8px;
+}
+.hotmeal-blog-option { margin: 0px;}
+.hotmeal-blog-option li {
+    float: left;
+    margin: 0px 36px 5px 0px;
+    list-style: none;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+}
+.hotmeal-blog-option li a,
+.hotmeal-blog-option li time { margin: 0px 0px 0px 4px;}
+.hotmeal-blog-option li:last-child { margin: 0px;}
+.hotmeal-blog-option li:before {
+    content: '';
+    position: absolute;
+    right: -18px;
+    top: 10px;
+    width: 1px;
+    height: 12px;
+}
+.hotmeal-blog-option li:last-child:before { content: none;}
+.hotmeal-rich-editor { margin: 0px 0px 18px;}
+.hotmeal-rich-editor p {
+    margin: 0px 0px 24px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
+blockquote {
+    border: 1px dashed #999999;
+    margin: 8px 0px 32px;
+    text-align: center;
+    font-size: 18px;
+    color: #222222;
+    font-style: italic;
+    letter-spacing: 1.1px;
+    line-height: 30px;
+    position: relative;
+    padding: 32px 60px 30px;
+    overflow: hidden;
+}
+blockquote:before {
+    content: "\e909";
+    font-family: icomoon;
+    font-size: 90px;
+    color: #222222;
+    position: absolute;
+    left: -12px;
+    top: 6px;
+    opacity: 0.1;
+    font-style: normal;
+}
+blockquote:after {
+    content: "\e909";
+    font-family: icomoon;
+    font-size: 70px;
+    position: absolute;
+    right: 19px;
+    bottom: 31px;
+    font-style: normal;
+}
+blockquote h6 {
+    margin: 21px 0px 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+    line-height: 0.7;
+}
+blockquote span {
+    letter-spacing: 0.5px;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 600;
+}
+/*hotmeal-post-tags*/
+.hotmeal-social-tag,.hotmeal-blog-social {
+    float: left;
+    width: 50%;
+}
+.hotmeal-post-tags {
+    border-top: 1px dashed #999999;
+    padding: 20px 0px 15px;
+    border-bottom: 1px dashed #999999;
+    margin: 0px 0px 50px;
+}
+.hotmeal-social-tag a {
+    float: left;
+    margin: 0px 20px 5px 0px;
+    font-size: 13px;
+    color: #555555;
+    letter-spacing: 0.4px;
+    padding: 6px 21px 5px;
+    position: relative;
+}
+.hotmeal-social-tag a:last-child { margin-right: 0px;}
+.hotmeal-social-tag a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 79%;
+    height: 1px;
+    background-color: #999999;
+}
+.hotmeal-social-tag a:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 20px;
+    background-color: #999999;
+}
+.hotmeal-social-tag a:hover:before {
+    left: 100%;
+    margin: 0px 0px 0px -79%;
+}
+.hotmeal-social-tag a:hover .btn-shape:before {
+    right: 100%;
+    margin: 0px -79% 0px 0px;
+}
+.hotmeal-social-tag .btn-shape:before { width: 79%;}
+.hotmeal-social-tag .btn-shape:after { height: 20px;}
+.hotmeal-social-tag a:hover:after {
+    top: 100%;
+    margin: -20px 0px 0px;
+}
+.hotmeal-social-tag a:hover .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -20px;
+}
+/*hotmeal-blog-social*/
+.hotmeal-blog-social ul { float: right;}
+.hotmeal-blog-social ul li {
+    float: left;
+    margin: 0px 0px 5px 10px;
+    list-style: none;
+}
+.hotmeal-blog-social ul li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 3px;
+    padding: 8px 0px 0px;
+}
+.hotmeal-blog-social ul li a.fa-facebook { background-color: #415598;}
+.hotmeal-blog-social ul li a.fa-twitter { background-color: #38a5df;}
+.hotmeal-blog-social ul li a.fa-pinterest-p { background-color: #cc2428;}
+.hotmeal-blog-social ul li a.fa-google-plus { background-color: #de4d38;}
+/*hotmeal-prenxt-post*/
+.hotmeal-prenxt-post,.hotmeal-prev-post,.hotmeal-next-post {
+    float: left;
+    width: 100%;
+}
+.hotmeal-prenxt-post { margin: 0px 0px 19px;}
+.hotmeal-prenxt-post ul { margin: 0px -15px;}
+.hotmeal-prenxt-post ul li {
+    float: left;
+    width: 50%;
+    list-style: none;
+    padding: 0px 15px;
+    margin: 0px 0px 30px;
+}
+.hotmeal-prev-post,.hotmeal-next-post {
+    padding: 18px 31px 21px;
+    position: relative;
+}
+.hotmeal-next-post { text-align: right;}
+.hotmeal-prev-post > a,
+.hotmeal-next-post > a {
+    display: inline-block;
+    font-style: italic;
+    margin: 0px 0px 1px;
+}
+.hotmeal-prev-post a i {
+    float: left;
+    margin: 7px 10px 0px 0px;
+}
+.hotmeal-next-post a i {
+    float: right;
+    margin: 7px 0px 0px 10px;
+}
+.hotmeal-prenxt-post h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin: 0px;
+    font-weight: 600;
+}
+.hotmeal-prenxt-post h6 a { color: #222;}
+.hotmeal-prev-post:before,
+.hotmeal-next-post:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 92%;
+    height: 1px;
+    background-color: #999999;
+}
+.hotmeal-prenxt-post ul li:hover .hotmeal-prev-post:before,
+.hotmeal-prenxt-post ul li:hover .hotmeal-next-post:before {
+    left: 100%;
+    margin: 0px 0px 0px -92%;
+}
+.hotmeal-prev-post:after,
+.hotmeal-next-post:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 90px;
+    background-color: #999999;
+}
+.hotmeal-prenxt-post ul li:hover .hotmeal-prev-post:after,
+.hotmeal-prenxt-post ul li:hover .hotmeal-next-post:after {
+    top: 100%;
+    margin: -90px 0px 0px;
+}
+.hotmeal-prenxt-post ul li:hover .btn-shape:before {
+    right: 100%;
+    margin: 0px -92% 0px 0px;
+}
+.hotmeal-prenxt-post .btn-shape { z-index: -1;}
+.hotmeal-prenxt-post .btn-shape:before { width: 92%;}
+.hotmeal-prenxt-post .btn-shape:after { height: 90px;}
+.hotmeal-prenxt-post ul li:hover .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -90px;
+}
+/*Realted Blog*/
+.hotmeal-section-heading {
+    float: left;
+    width: 100%;
+    letter-spacing: 0.8px;
+    margin: 0px 0px 30px;
+    line-height: 0.8;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 0px 11px;
+    position: relative;
+}
+.hotmeal-section-heading:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 50px;
+    height: 1px;
+}
+/*Related Blog*/
+.hotmeal-related-blog figure a,.hotmeal-related-blog figure a img,.hotmeal-related-blog figure,
+.hotmeal-related-blog-text {
+    float: left;
+    width: 100%;
+}
+.hotmeal-blog.hotmeal-related-blog { margin: 0px 0px 8px;}
+.hotmeal-related-blog figure { margin: 0px 0px 17px;}
+.hotmeal-related-blog figure a { position: relative;}
+.hotmeal-related-blog figure a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 0%;
+    opacity: 0.9;
+}
+.hotmeal-related-blog ul li:hover figure a:before { height: 100%;}
+.hotmeal-related-blog .hover-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+    padding: 9px 0px 0px;
+    margin: -22px -22px 0px 0px;
+    opacity: 0;
+}
+.hotmeal-related-blog ul li:hover .hover-btn { opacity: 1;}
+.hotmeal-related-blog .hover-btn:before,.hotmeal-related-blog .hover-btn small:before { width: 35px;}
+.hotmeal-related-blog .hover-btn:after,.hotmeal-related-blog .hover-btn small:after { height: 35px;}
+.hotmeal-related-blog-text h5 {
+    margin: 0px 0px 2px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 1;
+}
+.hotmeal-related-option {
+    float: left;
+    width: 100%;
+    margin: 0px;
+}
+.hotmeal-related-option li {
+    list-style: none;
+    float: left;
+    margin: 0px 5px 0px 0px;
+    font-size: 12px;
+}
+/*comment area*/
+.comments-area,.comment-list,.comment-list li,.comment-list > ul > li,.comment-list .thumblist,
+.comment-list li img,.thumb-list {
+    float: left;
+    width: 100%;
+}
+.comment-list .children { 
+    margin: 0px;
+}
+.comment-list > ul > li {
+    margin: 0px 0px 0px 0px;
+    list-style: none;
+}
+.comment-list .thumblist > ul                      {margin: 0px;}
+.comment-list li                                   {list-style: none;}
+.comment-list li figure {
+    float: left;
+    width: 70px;
+    margin: 0px;
+}
+.comment-list li figure ~ .text-holder {
+    padding: 0px 0px 0px 91px;
+    margin: 0px 0px 0px;
+}
+.comment-list > li .thumb-list {
+    padding: 0px 0px 35px 0px;
+    border-bottom: 1px dashed #999;
+    margin-bottom: 40px;
+}
+.comment-list > li:last-child .thumb-list {
+    border-bottom: none;
+    padding: 0px 0px 3px;
+}
+.comment-list .children > li .thumb-list { padding: 0px 0px 17px 97px;}
+.text-holder h6 {
+    margin: -6px 0px 12px;
+    letter-spacing: 0.9px;
+    font-weight: 600;
+    float: left;
+}
+.text-holder p {
+    margin-bottom: 16px;
+    display: inline-block;
+    letter-spacing: 1.1px;
+}
+.text-holder .post-date {
+    float: left;
+    font-size: 12px;
+    line-height: 1;
+    color: #555555;
+    padding: 0px 0px 0px 32px;
+    font-weight: 600;
+    position: relative; 
+}
+.text-holder .post-date:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: 1px;
+    width: 1px;
+    height: 11px;
+    background-color: #aaaaaa;
+}
+.comment-reply-link {
+    float: left;
+    margin: 0px 22px 5px 0px;
+    line-height: 1;
+    position: relative;
+    font-weight: 600;
+    font-style: italic;
+    border-bottom: 1px solid;
+    letter-spacing: 1.2px;
+}
+.comment-list { margin: 0px 0px 0px;}
+/* form*/
+.comment-respond,.hotmeal-full-form textarea {
+    float: left;
+    width: 100%;
+}
+.comments-area { margin-top: 0px;}
+.comment-respond { margin: 0px 0px 10px;}
+.comment-respond form { margin: 0px -12px;}
+.comment-respond form p {
+    float: left;
+    list-style-type: none;
+    margin-bottom: 30px;
+    padding: 0 12px 0;
+    width: 50%;
+    position: relative;
+}
+.comment-respond form p input[type="text"],
+.comment-respond form p input[type="email"] {
+    background-color: transparent;
+    color: #555555;
+    font-size: 14px;
+    float: left;
+    height: 46px;
+    margin: 0;
+    padding-left: 20px;
+    width: 100%;
+    border: 1px dashed #999999;
+}
+.comment-respond form p input[type="submit"] { padding: 9px 26px 7px;}
+.comment-respond form > .hotmeal-full-form { width: 100%;}
+.hotmeal-full-form textarea {
+    height: 150px;
+    color: #000000;
+    font-size: 14px;
+    padding-left: 19px;
+    padding-top: 16px;
+    background-color: transparent;
+    border: 1px dashed #999999;
+}
+.comment-respond .submit:hover:after { margin: -25px 0px 0px;}
+.comment-respond .submit:hover span:after { margin: 0px 0px -25px;}
+/*Sidebar*/
+.hotmeal-main-content .widget {
+    float: left;
+    width: 100%;
+    border: 1px dashed #999;
+    padding: 30px 30px 33px;
+    margin: 0px 0px 50px;
+}
+.widget.widget_search { padding: 0px;}
+.widget_search form,.widget_search form input[type="text"] {
+    float: left;
+    width: 100%;
+}
+.widget_search form { position: relative;}
+.widget_search form input[type="text"] {
+    background-color: transparent;
+    font-size: 12px;
+    color: #555;
+    border-radius: 4px;
+    padding-left: 14px;
+    height: 46px;
+}
+.widget_search form label {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+}
+.widget_search form label:before {
+    content: "\e906";
+    font-family: icomoon;
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    font-size: 15px;
+    color: #ffffff;
+}
+.widget_search form label input[type="submit"] {
+    width: 40px;
+    height: 46px;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    display: inline-block;
+    background-color: transparent;
+}
+/*widget_author*/
+.widget-author-text {
+    float: left;
+    width: 100%;
+}
+.widget_author { text-align: center;}
+.widget_author figure {
+    display: inline-block;
+    margin: 0px 0px 17px;
+    overflow: hidden;
+    width: 100px;
+    border-radius: 100%;
+}
+.widget-author-text h5 {
+    margin: 0px 0px 24px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    padding: 0px 0px 5px;
+    position: relative;
+}
+.widget-author-text h5:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 50px;
+    margin: 0px 0px 0px -25px;
+    height: 1px;
+}
+.widget-author-text p { margin: 0px;}
+/*widget_popular_post*/
+.widget-heading {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 25px;
+    line-height: 0.8;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    position: relative;
+    font-weight: 600;
+    padding: 0px 0px 10px;
+}
+.widget-heading:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 50px;
+    height: 1px;
+}
+.widget_popular_post ul,.widget_popular_post ul li {
+    float: left;
+    width: 100%;
+}
+.widget_popular_post ul li {
+    list-style: none;
+    margin: 0px 0px 23px;
+    line-height: 1;
+}
+.widget_popular_post ul li:last-child { margin: 0px;}
+.widget_popular_post h6 {
+    margin: 0px 0px 6px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+}
+.widget_popular_post time { font-size: 12px;}
+/*widget_cetagories*/
+.widget_cetagories ul li,.widget_cetagories ul {
+    float: left;
+    width: 100%;
+}
+.widget_cetagories ul li {
+    list-style: none;
+    margin: 0px;
+    padding: 15px 0px;
+    letter-spacing: 0.5px;
+    border-bottom: 1px dashed #999;
+    line-height: 1.5;
+}
+.widget_cetagories ul li:first-child { padding-top: 0px;}
+.widget_cetagories ul li:last-child {
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+.widget_cetagories ul li a { font-weight: 600;}
+.widget_cetagories ul li a span {
+    font-size: 12px;
+    margin: 0px 0px 0px 17px;
+    color: #555;
+    font-weight: 400;
+}
+/*widget_deals*/
+.widget_deals ul,.widget_deals ul li,.widget_deals figure a,.widget_deals figure a img {
+    float: left;
+    width: 100%;
+}
+.widget_deals ul li {
+    list-style: none;
+    margin: 0px 0px 30px;
+    line-height: 1;
+}
+.widget_deals ul li:last-child { margin: 0px;}
+.widget_deals figure {
+    float: left;
+    width: 48px;
+    margin: 0px;
+}
+.widget_deals figure ~ .widget-deals-text {
+    padding: 1px 0px 0px 68px;
+}
+.widget-deals-text h6 {
+    font-size: 14px;
+    margin: 0px 0px 8px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+/*widget_tags*/
+.widget.widget_tags { padding-right: 11px;}
+.widget_tags a {
+    float: left;
+    font-size: 13px;
+    color: #555;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 5px 15px 6px;
+    margin: 0px 10px 15px 0px;
+    border: 1px solid #999;
+}
+.widget_tags a:hover { color: #fff;}
+/*hotmeal-blog-grid*/
+.hotmeal-blog-grid-wrap,.hotmeal-blog-grid figure,.hotmeal-blog-grid figure a,.hotmeal-blog-grid figure a img,
+.hotmeal-blog-grid-text {
+    float: left;
+    width: 100%;
+}
+.hotmeal-blog-grid figure { margin: 0px 0px 10px;}
+.hotmeal-blog-grid figure a {
+    position: relative;
+    overflow: hidden;
+}
+.hotmeal-blog-grid figure a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+}
+.hotmeal-blog-grid ul li:hover figure a:before {
+    opacity: 0.9;
+    height: 100%;
+}
+.hotmeal-blog-grid-wrap {
+    border: 1px solid #aaaaaa;
+    padding: 19px;
+}
+.hotmeal-blog-grid-text { padding: 0px 0px 10px;}
+.hotmeal-blog-grid-text span {
+    display: block;
+    font-size: 12px;
+    margin: 0px 0px 5px;
+    text-transform: uppercase;
+}
+.hotmeal-blog-grid-text time {
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    display: inline-block;
+    margin: 0px 0px 13px;
+}
+.hotmeal-blog-grid-text time a { color: #999;}
+.hotmeal-blog-grid-text h2 {
+    margin: 0px 0px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    line-height: 26px;
+}
+.hotmeal-blog-grid-text p {
+    margin: 0px 0px 18px;
+    line-height: 26px;
+}
+.hotmeal-blog-grid-text .hotmeal-simple-btn { line-height: 15px;}
+.hotmeal-blog-grid .hover-btn {
+    margin: -27px -27px 0px 0px;
+    top: 0px;
+    opacity: 0;
+}
+.hotmeal-blog-grid ul li:hover .hover-btn {
+    opacity: 1;
+    top: 50%;
+}
+/*pagination*/
+.hotmeal-pagination,.hotmeal-pagination > ul {
+    float: left;
+    width: 100%;
+}
+.hotmeal-pagination {
+    margin: 50px 0 30px;
+    text-align: center;
+}
+.hotmeal-pagination > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 17px 10px 0;
+    vertical-align: middle;
+}
+.hotmeal-pagination > ul > li > .previous span i { display: inline-block;}
+.hotmeal-pagination > ul > li > .previous,
+.hotmeal-pagination > ul > li > .next {
+    line-height: 1;
+    padding: 12px 0px 0px;
+    font-size: 15px;
+}
+.hotmeal-pagination > ul > li:hover > a,.hotmeal-pagination > ul > li:hover > span,
+.hotmeal-pagination > ul > li > .current { color: #fff;}
+.hotmeal-pagination > ul > li > a,.hotmeal-pagination > ul > li > span {
+    color: #fff;
+    font-size: 12px;
+    float: left;
+    height: 40px;
+    line-height: 3;
+    padding: 3px 0px 0px;
+    width: 40px;
+    position: relative;
+    color: #999999;
+}
+.hotmeal-pagination > ul > li > a:before,
+.hotmeal-pagination > ul > li > span:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    height: 1px;
+    background-color: #999999;
+}
+.hotmeal-pagination > ul > li > .current:before {
+    left: 100%;
+    margin: 0px 0px 0px -30px;
+}
+.hotmeal-pagination > ul > li > .current:after {
+    top: 100%;
+    margin: -35px 0px 0px;
+}
+.hotmeal-pagination > ul > li > .current .btn-shape:before {
+    right: 100%;
+    margin: 0px -30px 0px 0px;
+}
+.hotmeal-pagination > ul > li > .current .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -35px;
+}
+.hotmeal-pagination > ul > li > a:after,
+.hotmeal-pagination > ul > li > span:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 35px;
+    background-color: #999999;
+}
+.hotmeal-pagination > ul > li > a .btn-shape:before,
+.hotmeal-pagination > ul > li > span .btn-shape:before { width: 30px;}
+.hotmeal-pagination > ul > li > a .btn-shape:after,
+.hotmeal-pagination > ul > li > span .btn-shape:after { height: 35px;}
+/*pagination*/
+/*Blog Large*/
+.hotmeal-blog-large figure,.hotmeal-blog-large figure a,.hotmeal-blog-large figure a img,
+.hotmeal-blog-large-text {
+    float: left;
+    width: 100%;
+}
+.hotmeal-blog-large figure { margin: -2px 0px 22px;}
+.hotmeal-blog-large figure a {
+    position: relative;
+    overflow: hidden;
+}
+.hotmeal-blog-large figure a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.hotmeal-blog-large ul li:hover figure a:before { opacity: 0.9;}
+.hotmeal-blog-large .hover-btn {
+    margin: -27px -27px 0px 0px;
+    top: 50%;
+    opacity: 0;
+}
+.hotmeal-blog-large ul li:hover .hover-btn { opacity: 1;}
+.hotmeal-blog-large-text p {
+    margin: 0px 0px 22px;
+    line-height: 26px;
+}
+.hotmeal-blog-large-text .hotmeal-learn-btn:after { height: 26px;}
+.hotmeal-blog-large-text .hotmeal-learn-btn .btn-shape:after { height: 26px;}
+.hotmeal-blog-large-text .hotmeal-learn-btn { padding: 7px 22px 5px;}
+.hotmeal-blog ul li:hover .hotmeal-learn-btn:before {
+    left: 100%;
+    margin: 0px 0px 0px -74%;
+}
+.hotmeal-blog ul li:hover .hotmeal-learn-btn:after {
+    top: 100%;
+    margin: -26px 0px 0px
+}
+.hotmeal-blog ul li:hover .hotmeal-learn-btn .btn-shape:before {
+    right: 100%;
+    margin: 0px -74% 0px 0%;
+}
+.hotmeal-blog ul li:hover .hotmeal-learn-btn .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -26px
+}
+/*Modern Gallery*/
+.hotmeal-gallery-subheader {
+    background-image: url("extra-images/gallery-subheader-img.jpg");
+    padding: 221px 0px 126px;
+}
+.hotmeal-gallery,.hotmeal-gallery-filterable,.hotmeal-modern-gallery-wrap,.hotmeal-modern-gallery figure,
+.hotmeal-modern-gallery figure > a,.hotmeal-modern-gallery figure > a img {
+    float: left;
+    width: 100%;
+}
+.hotmeal-modern-gallery figure { margin: 0px;}
+.hotmeal-gallery > ul > li {
+    list-style: none;
+    margin: 0px 0px 30px;
+}
+.hotmeal-modern-gallery figure > a { position: relative;}
+.hotmeal-modern-gallery figure > a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.hotmeal-modern-gallery ul li:hover figure > a:before { opacity: 0.9;}
+.hotmeal-modern-gallery figure figcaption {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    margin: -25px 0px 0px;
+    opacity: 0;
+}
+.hotmeal-modern-gallery ul li:hover figure figcaption { opacity: 1;}
+.hotmeal-modern-gallery figure figcaption h5 {
+    margin: 0px 0px 4px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+.hotmeal-modern-gallery figure figcaption h5 a { color: #ffffff;}
+.hotmeal-modern-gallery figure figcaption span { color: #ffffff;}
+.hotmeal-gallery-filterable {
+    text-align: center;
+    margin: 0px 0px 50px;
+}
+.hotmeal-gallery-filterable ul {
+    border: 2px dashed #999;
+    display: inline-block;
+    padding: 8px 0px;
+}
+.hotmeal-gallery-filterable ul li {
+    list-style: none;
+    float: left;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0px 70px;
+}
+.hotmeal-gallery-filterable ul li a {
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+    padding: 0px 0px 1px;
+    letter-spacing: 0.5px;
+}
+.hotmeal-gallery-filterable ul li a:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 0%;
+    height: 1px;
+    opacity: 0;
+}
+.hotmeal-gallery-filterable ul li:hover a:before {
+    opacity: 1;
+    left: 0px;
+    width: 100%;
+}
+.hotmeal-gallery-filterable ul li a.is-checked:before {
+    opacity: 1;
+    left: 0px;
+    width: 100%;
+}
+.hotmeal-modern-gallery-wrap {
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.10);
+}
+/*Menu*/
+.hotmeal-breakfast-manu { margin: 0px 0px 20px;}
+.hotmeal-breakfast.hotmeal-filterable ul li a {
+    border: 1px dashed #999;
+    color: #999;
+}
+.hotmeal-breakfast-manu .hotmeal-menu-list-text,
+.hotmeal-dinner-manu .hotmeal-menu-list-text {
+    background: transparent;
+    border: 1px dashed #999;
+}
+.hotmeal-breakfast-manu .hotmeal-menu-list-text h5 a,
+.hotmeal-dinner-manu .hotmeal-menu-list-text h5 a { color: #222;}
+.hotmeal-breakfast-manu .hotmeal-menu-list-text p,
+.hotmeal-dinner-manu .hotmeal-menu-list-text p { color: #555;}
+/*hotmeal-best-offer*/
+.hotmeal-best-offer-text,.hotmeal-best-offer,.hotmeal-best-thumb {
+    float: left;
+    width: 100%;
+}
+.hotmeal-best-offer {
+    float: left;
+    width: 100%;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.15);
+    padding: 47px 10px 28px 30px;
+}
+.hotmeal-best-offer-text h2 {
+    font-size: 24px;
+    color: #222222;
+    line-height: 1;
+    margin: 0px 0px 19px;
+    font-weight: 600;
+}
+.hotmeal-best-offer-text p {
+    margin: 0px 0px 14px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+}
+.hotmeal-best-thumb {
+    margin: -16px 0px 0px;
+    text-align: center;
+}
+/*Reservation*/
+.hotmeal-reserve-table.hotmeal-reservation-wrap .hotmeal-fancy-title {
+    text-align: center;
+    margin: 0px 0px 70px;
+}
+.hotmeal-reservation-wrap {
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.10);
+    padding: 50px 30px 20px;
+    margin: 0px 0px 100px;
+}
+.hotmeal-reservation-info,.hotmeal-reservation-info > ul,.hotmeal-reservation-info > ul > li {
+    float: left;
+    width: 100%;
+}
+.hotmeal-reservation-info {
+    box-shadow: 0 0 15px rgba(0,0,0,0.10);
+    padding: 50px 30px 30px;
+    margin: 0px 0px 40px;
+}
+.hotmeal-reservation-info .hotmeal-fancy-title {
+    text-align: left;
+    margin: 0px 0px 21px;
+}
+.hotmeal-reservation-info > ul > li {
+    list-style: none;
+    margin: 0px 0px 12px;
+    line-height: 1;
+}
+.hotmeal-reservation-info > p {
+    margin: 0px 0px 16px;
+    letter-spacing: 0.6px;
+}
+.hotmeal-reservation-info ul li h6 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px;
+    float: left;
+    width: 109px;
+    letter-spacing: 0.4px;
+}
+.hotmeal-reservation-info ul li p {
+    margin: 0px;
+    letter-spacing: 0.9px;
+}
+.hotmeal-reservation-info ul li a {
+    color: #555;
+    line-height: 1.5;
+    letter-spacing: 0.9px;
+}
+.hotmeal-reservation-social {
+    float: left;
+    margin: 0px;
+}
+.hotmeal-reservation-social li {
+    float: left;
+    list-style: none;
+    font-size: 14px;
+    margin: 0px 8px 0px 0px;
+}
+/*hotmeal-reservation-twitter*/
+.hotmeal-reservation-twitter,.hotmeal-reservation-twitter > ul,.hotmeal-reservation-twitter > ul > li {
+    float: left;
+    width: 100%;
+}
+.hotmeal-reservation-twitter {
+    box-shadow: 0 0 15px rgba(0,0,0,0.10);
+    padding: 50px 30px 29px;
+    margin: 0px 0px 40px;
+}
+.hotmeal-reservation-twitter .hotmeal-fancy-title {
+    text-align: left;
+    margin: 0px 0px 21px;
+}
+.hotmeal-reservation-twitter > ul > li {
+    list-style: none;
+    margin: 0px 0px 18px;
+}
+.hotmeal-reservation-twitter > p {
+    margin: 0px 0px 15px;
+    letter-spacing: 0.6px;
+}
+.hotmeal-reservation-twitter > ul > li i {
+    font-size: 18px;
+    float: left;
+    margin: 4px 15px 0px 0px;
+    color: #329df0;
+}
+.hotmeal-reservation-twitter > ul > li h6 {
+    margin: 0px 0px 1px;
+    display: inline-block;
+}
+.hotmeal-reservation-twitter > ul > li h6 a {
+    float: left;
+    margin: 0px 13px 0px 0px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.hotmeal-reservation-twitter > ul > li time {
+    font-size: 12px;
+    font-style: italic;
+    float: left;
+    margin: 4px 0px 0px;
+    color: #666666;
+}
+.hotmeal-reservation-twitter > ul > li p {
+    margin: 0px;
+    float: left;
+    letter-spacing: 0.7px;
+}
+/*Shop Detail*/
+.hotmeal-shop-detail {
+    float: left;
+    width: 100%;
+    padding: 41px 50px 45px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.10);
+    margin: 0px 0px 50px;
+}
+.hotmeal-shop-heading {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 58px;
+}
+.hotmeal-shop-heading h2 {
+    margin: 0px 0px 4px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+}
+.hotmeal-shop-heading small {
+    color: #aaaaaa;
+    float: left;
+    margin: 5px 0px 0px;
+}
+.star-rating {
+    width: 11%;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    position: relative;
+    margin: 0px 12px 8px 0px;
+}
+.star-rating:before,.star-rating-box:before {
+    content: "\f006 \f006 \f006 \f006 \f006";
+    font-family: FontAwesome;
+    font-size: 12px;
+    left: 0px;
+    letter-spacing: 0px;
+    position: absolute;
+    top: 0px;
+    color: #c2c2c2;
+    letter-spacing: 1px;
+}
+.star-rating-box:before                                                 { content: "\f005 \f005 \f005 \f005 \f005";}
+.star-rating > .star-rating-box {
+    height: 20px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+}
+/*shop slider*/
+.hotmeal-shop-thumb,.hotmeal-shop-thumb-list {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.hotmeal-shop-thumb {
+    position: relative;
+    padding: 0px 0px 52px;
+    margin: 0px 0px 36px;
+}
+.hotmeal-shop-thumb .slick-dots {
+    bottom: 0px;
+}
+.hotmeal-shop-thumb .slick-dots li button {
+    width: 5px;
+    height: 5px;
+    background-color: #999;
+    border-radius: 100%;
+    border: none;
+}
+.hotmeal-shop-thumb .slick-dots li.slick-active button {
+    width: 7px;
+    height: 7px;
+    margin: 0px 0px -1px;
+}
+.hotmeal-shop-thumb img,.hotmeal-shop-thumb-list img { display: inline-block;}
+.hotmeal-images-list-layer { display: inline-block;}
+.hotmeal-images-list-layer span {
+    border: 1px dashed #999;
+    display: inline-block;
+    cursor: pointer;
+}
+/*hotmeal-product-color*/
+.hotmeal-product-color { margin: 0px 0px 27px;}
+.hotmeal-product-color,.hotmeal-shop-text {
+    float: left;
+    width: 100%;
+}
+.hotmeal-shop-text { padding: 52px 0px 0px;}
+.hotmeal-shop-text p {
+    margin: 0px 0px 17px;
+    line-height: 26px;
+    letter-spacing: 0.3px;
+}
+.hotmeal-shop-text > span {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0px 0px 17px;
+    width: 111px;
+    letter-spacing: 0.6px;
+    display: inline-block;
+}
+.hotmeal-product-color h6 {
+    margin: 0px 0px 15px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+.hotmeal-product-color span {
+    float: left;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 0px 15px 0px 0px;
+    position: relative;
+}
+.hotmeal-product-color span.active:before { opacity: 1;}
+.hotmeal-product-color span:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    width: 21px;
+    height: 21px;
+    opacity: 0;
+}
+.hotmeal-product-color span:hover:before { opacity: 1;}
+.hotmeal-product-color span.color-one { background-color: #2a1e1e;}
+.hotmeal-product-color span.color-two { background-color: #e7b278;}
+.hotmeal-product-color span.color-three { background-color: #cb8046;}
+/*hotmeal-product-option*/
+.hotmeal-product-option {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 18px;
+}
+.hotmeal-product-option ul li {
+    float: left;
+    margin: 0px 50px 10px 0px;
+    list-style: none;
+}
+.hotmeal-product-option label {
+    display: block;
+    margin: 0px 0px 13px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2e2e2e;
+    letter-spacing: 0.4px;
+}
+.hotmeal-product-option input[type="number"] {
+    height: 35px;
+    width: 120px;
+    font-size: 14px;
+    color: #999999;
+    background-color: transparent;
+    border: 1px dashed #999;
+    padding-left: 21px;
+}
+.hotmeal-search-select {
+    position: relative;
+    float: left;
+    border: 1px dashed #999;
+}
+.hotmeal-search-select select {
+    font-size: 12px;
+    background-color: #fff;
+    height: 33px;
+    padding-left: 17px;
+    color: #aaaaaa;
+    border: none;
+    width: 170px;
+}
+.hotmeal-search-select:before {
+    content: '';
+    background-color: #ffffff;
+    height: 33px;
+    width: 20px;
+    position: absolute;
+    right: 0px;
+    pointer-events: none;
+    bottom: 0px;
+}
+.hotmeal-search-select:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 10px;
+    color: #999999;
+    right: 10px;
+    bottom: 12px;
+    text-align: center;
+    position: absolute;
+    background-color: #ececec;
+    width: 15px;
+    padding: 0px 0px 0 0;
+    line-height: 0.9;
+    height: 9px;
+    border-radius: 2px;
+    pointer-events: none;
+}
+/*hotmeal-product-tags*/
+.hotmeal-product-tags {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 15px;
+}
+.hotmeal-product-tags ul li {
+    float: left;
+    margin: 0px 57px 10px 0px;
+    list-style: none;
+}
+.hotmeal-product-tags h6 {
+    margin: 0px 0px 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2e2e2e;
+    letter-spacing: 0.4px;
+}
+.hotmeal-product-tags span {
+    font-size: 12px;
+    letter-spacing: 0.6px;
+}
+.hotmeal-product-tags a {
+    color: #555;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+}
+.hotmeal-cart-btn {
+    position: relative;
+    float: left;
+    color: #555;
+    letter-spacing: 0.5px;
+    padding: 10px 21px;
+    margin: 0px 30px 35px 0px;
+}
+.hotmeal-cart-btn i {
+    float: right;
+    margin: 4px 0px 0px 10px;
+    font-size: 12px;
+}
+.hotmeal-cart-btn:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 79%;
+    height: 1px;
+    background-color: #999999;
+}
+.hotmeal-cart-btn:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 25px;
+    background-color: #999999;
+}
+.hotmeal-cart-btn .btn-shape:before { width: 79%;}
+.hotmeal-cart-btn .btn-shape:after { height: 25px;}
+.hotmeal-cart-btn:hover .btn-shape:before {
+    right: 100%;
+    margin: 0px -79% 0px 0px;
+}
+.hotmeal-cart-btn:hover:before {
+    left: 100%;
+    margin: 0px 0px 0px -79%;
+}
+.hotmeal-cart-btn:hover .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -25px;
+}
+.hotmeal-cart-btn:hover:after {
+    top: 100%;
+    margin: -25px 0px 0px;
+}
+/*hotmeal-shop-social*/
+.hotmeal-shop-social {
+    float: left;
+    width: 100%;
+}
+.hotmeal-shop-social ul li {
+    float: left;
+    margin: 0px 15px 5px 0px;
+    list-style: none;
+}
+.hotmeal-shop-social h6 {
+    margin: 0px 5px 0px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2e2e2e;
+    letter-spacing: 0.4px;
+}
+.hotmeal-shop-social ul li a {
+    font-size: 15px;
+    color: #999999;
+    float: left;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    padding: 2px 0px 0px;
+}
+.hotmeal-shop-social ul li a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 25px;
+    height: 1px;
+    background-color: #999999;
+}
+.hotmeal-shop-social ul li a:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 25px;
+    background-color: #999999;
+}
+.hotmeal-shop-social ul li a .btn-shape:before { width: 25px;}
+.hotmeal-shop-social ul li a .btn-shape:after { height: 25px;}
+.hotmeal-shop-social ul li a:hover .btn-shape:before {
+    right: 100%;
+    margin: 0px -25px 0px 0px;
+}
+.hotmeal-shop-social ul li a:hover:before {
+    left: 100%;
+    margin: 0px 0px 0px -25px;
+}
+.hotmeal-shop-social ul li a:hover .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -25px;
+}
+.hotmeal-shop-social ul li a:hover:after {
+    top: 100%;
+    margin: -25px 0px 0px;
+}
+/*hotmeal-shop-tabs*/
+.hotmeal-related-product { margin: 0px 0px 10px;}
+.hotmeal-shop-tabs {
+    float: left;
+    width: 100%;
+}
+.hotmeal-shop-tabs .nav-tabs {
+    float: left;
+    border: none;
+    border-radius: 0px;
+}
+.hotmeal-shop-tabs .nav-tabs li {
+    list-style: none;
+    line-height: 1;
+    margin: 0 20px 0 0;
+    text-align: center;
+    position: relative;
+}
+.hotmeal-shop-tabs .nav-tabs > li.active > a,
+.hotmeal-shop-tabs .nav-tabs > li.active > a:hover,
+.hotmeal-shop-tabs .nav-tabs > li.active > a:focus {
+    color: #ffffff;
+    border: none;
+    background-color: transparent;
+    border: 1px solid;
+    font-weight: 400;
+}
+.hotmeal-shop-tabs .nav-tabs li a {
+    float: left;
+    padding: 9px 0px 9px;
+    width: 135px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    position: relative;
+    border: none;
+    margin: 0px;
+    color: #555;
+    border-radius: 0px;
+    border: 1px dashed #999;
+    text-transform: uppercase;
+}
+.hotmeal-shop-tabs .tab-content {
+    display: inline-block;
+    width: 100%;
+    padding-top: 40px;
+    
+}
+.hotmeal-shop-tabs .tab-content .comment-respond { margin: 0px 0px 14px;}
+.hotmeal-shop-description p {
+    margin: 0;
+    line-height: 24px;
+}
+.hotmeal-shop-description {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 50px;
+}
+/*hotmeal-shop*/
+.hotmeal-shop,.hotmeal-shop-grid-text,.hotmeal-shop-grid figure,.hotmeal-shop-grid figure > a,
+.hotmeal-shop-grid figure a img,.hotmeal-shop-grid-text > span {
+    float: left;
+    width: 100%;
+}
+.hotmeal-shop > ul > li {
+    margin: 0px -4px 30px 0px;
+    list-style: none;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.hotmeal-shop-grid figure {
+    margin: 0px;
+    box-shadow: 0 0 8px rgba(0,0,0,.10);
+}
+.hotmeal-shop-grid ul li:hover figure { box-shadow: none;}
+.hotmeal-shop-grid figure > span {
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    z-index: 1;
+    text-transform: uppercase;
+    padding: 1px 10px;
+    border-radius: 2px;
+}
+.hotmeal-shop-grid ul li:hover figure > span { opacity: 0;}
+.hotmeal-shop-grid figure > a { position: relative;}
+.hotmeal-shop-grid figure > a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.hotmeal-shop-grid ul li:hover figure > a:before { opacity: 0.9;}
+.hotmeal-shop-grid figure figcaption {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    margin: -35px 0px 0px;
+    opacity: 0;
+}
+.hotmeal-shop-grid ul li:hover figure figcaption { opacity: 1;}
+.hotmeal-shop-grid figure figcaption a {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    margin: 0px 8px;
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    padding: 9px 0px 0px;
+}
+.hotmeal-shop-grid figure figcaption a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 35px;
+    height: 1px;
+    background-color: #ffffff;
+}
+.hotmeal-shop-grid figure figcaption a:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 35px;
+    width: 1px;
+    background-color: #ffffff;
+}
+.hotmeal-shop-grid figure figcaption a .btn-shape:before {
+    background-color: #fff;
+    width: 35px;
+}
+.hotmeal-shop-grid figure figcaption a .btn-shape:after {
+    background-color: #fff;
+    height: 35px;
+}
+.hotmeal-shop-grid-text {
+    padding: 23px 20px 0px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+.hotmeal-shop-grid ul li:hover .hotmeal-shop-grid-text {
+    padding-bottom: 19px;
+    margin: -30px 0px 0px;
+    box-shadow: 0 0 8px rgba(0,0,0,.10);
+}
+.hotmeal-shop-grid-text .star-rating::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    color: #999999;
+}
+.hotmeal-shop-grid-text .star-rating::before,
+.hotmeal-shop-grid-text .star-rating-box::before { letter-spacing: 4px;}
+.hotmeal-shop-grid-text h2 {
+    font-size: 16px;
+    margin: 0px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.hotmeal-shop-grid-text .star-rating {
+    width: 32%;
+    margin: 0px;
+}
+.hotmeal-shop-grid-text small {
+    float: left;
+    font-size: 12px;
+    color: #b2b2b2;
+    margin: -2px 0px 2px 11px;
+}
+.hotmeal-shop-grid-text > span {
+    font-size: 16px;
+    opacity: 0;
+    visibility: hidden;
+    line-height: 19px;
+}
+.hotmeal-shop-grid ul li:hover .hotmeal-shop-grid-text > span {
+    line-height: 28px;
+    visibility: visible;
+    opacity: 1;
+}
+.hotmeal-shop-grid-text > span del {
+    font-size: 12px;
+    color: #999999;
+}
+/*hotmeal-shop-List*/
+/*Shop Filter*/
+.hotmeal-shop-filter {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 50px;
+    padding: 9px 20px 9px 30px;
+    border: 1px dashed #999;
+}
+.hotmeal-shop-filter > span {
+    font-size: 14px;
+    float: left;
+    color: #222222;
+    margin: 5px 0px 0px 0px;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+}
+.hotmeal-shop-filter .nav-tabs {
+    float: right;
+    border: none;
+    border-radius: 30px;
+    margin: 5px 0px 0px;
+}
+.hotmeal-shop-filter .nav-tabs li {
+    list-style: none;
+    line-height: 1;
+    margin: 0 0px 0 21px;
+    position: relative;
+}
+.hotmeal-shop-filter .nav-tabs > li.active > a,
+.hotmeal-shop-filter .nav-tabs > li.active > a:hover,
+.hotmeal-shop-filter .nav-tabs > li.active > a:focus {
+    border: none;
+    background-color: transparent;
+}
+.hotmeal-shop-filter .nav-tabs > li > a > span { color: #666666;}
+.hotmeal-shop-filter .nav-tabs li a {
+    float: left;
+    padding: 0px;
+    font-size: 14px;
+    position: relative;
+    border: none;
+    margin: 0px;
+    color: #999999;
+    background-color: transparent;
+}
+.hotmeal-shop-filter .nav-tabs li a i {
+    display: inline-block;
+    margin: 0px 6px 0px 0px;
+}
+.hotmeal-filter-select {
+    position: relative;
+    float: right;
+    margin: 0px 0px 0px 19px;
+}
+.hotmeal-filter-select select {
+    font-size: 12px;
+    width: 140px;
+    background-color: #ffffff;
+    height: 30px;
+    padding: 0 0 0 15px;
+    color: #999999;
+    border: 1px solid #ececec;
+}
+.hotmeal-filter-select:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 12px;
+    color: #999999;
+    right: 1px;
+    bottom: 1px;
+    text-align: center;
+    position: absolute;
+    background-color: #ffffff;
+    width: 20px;
+    padding: 5px 2px 0 0;
+    height: 28px;
+}
+.hotmeal-shop-list figure a,.hotmeal-shop-list figure a img,.hotmeal-shop-list-text > span {
+    float: left;
+    width: 100%;
+}
+.hotmeal-shop-list figure {
+    float: left;
+    width: 267px;
+    margin: 0px;
+    box-shadow: 0 0 6px rgba(0,0,0,.10);
+}
+.hotmeal-shop-list figure a { position: relative;}
+.hotmeal-shop-list figure a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.hotmeal-shop-list ul li:hover figure a:before { opacity: 0.9;}
+.hotmeal-shop-list figure ~ .hotmeal-shop-list-text {
+    margin: 0px 0px 0px 267px;
+    padding: 24px 30px 30px 24px;
+}
+.hotmeal-shop-list-text { background-color: #f9f9f9;}
+.hotmeal-shop-list-text > span {
+    font-size: 16px;
+    margin: 0px 0px 11px;
+}
+.hotmeal-shop-list-text > span del {
+    font-size: 12px;
+    color: #999999;
+}
+.hotmeal-shop-list-text .star-rating::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    color: #999999;
+}
+.hotmeal-shop-list-text .star-rating::before,
+.hotmeal-shop-list-text .star-rating-box::before { letter-spacing: 3px;}
+.hotmeal-shop-list-text h2 {
+    font-size: 16px;
+    margin: 0px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.hotmeal-shop-list-text p {
+    display: inline-block;
+    margin: 0px 0px 22px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
+.hotmeal-shop-list-text .star-rating {
+    margin: 0px 0px 9px;
+    width: 13%;
+}
+.hotmeal-shop-list-text small {
+    float: left;
+    font-size: 12px;
+    color: #b2b2b2;
+    margin: -2px 0px 2px 11px;
+}
+.hotmeal-shop-list .hover-btn:before { width: 35px;}
+.hotmeal-shop-list .hover-btn:after { height: 35px;}
+.hotmeal-shop-list .hover-btn small:before { width: 35px;}
+.hotmeal-shop-list .hover-btn small:after { height: 35px;}
+.hotmeal-shop-list .hover-btn {
+    margin: -23px -23px 0px 0px;
+    top: 50%;
+    opacity: 0;
+    width: 45px;
+    height: 45px;
+    font-size: 15px;
+    padding: 9px 0px 0px;
+}
+.hotmeal-shop-list ul li:hover .hover-btn { opacity: 1;}
+.hotmeal-shop-list-text .hotmeal-learn-btn:after { height: 26px;}
+.hotmeal-shop-list-text .hotmeal-learn-btn .btn-shape:after { height: 26px;}
+.hotmeal-shop-list-text .hotmeal-learn-btn {
+    padding: 4px 22px 3px;
+    float: none;
+    display: inline-block;
+}
+.hotmeal-shop ul li:hover .hotmeal-learn-btn:before {
+    left: 100%;
+    margin: 0px 0px 0px -74%;
+}
+.hotmeal-shop ul li:hover .hotmeal-learn-btn:after {
+    top: 100%;
+    margin: -26px 0px 0px
+}
+.hotmeal-shop ul li:hover .hotmeal-learn-btn .btn-shape:before {
+    right: 100%;
+    margin: 0px -74% 0px 0%;
+}
+.hotmeal-shop ul li:hover .hotmeal-learn-btn .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -26px
+}
+/*Team Detail*/
+.hotmeal-team-detail,.hotmeal-team-thumb,.hotmeal-team-thumb img,.hotmeal-team-option,
+.hotmeal-team-detail-text {
+    float: left;
+    width: 100%;
+}
+.hotmeal-team-thumb { margin: 0px;}
+.hotmeal-team-detail {
+    box-shadow: 0 0 10px rgba(0,0,0,0.10);
+    position: relative;
+    margin: 0px 0px 68px;
+}
+.hotmeal-team-detail:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: -10px;
+    width: 97%;
+    height: 10px;
+    background-color: #ededed;
+}
+.hotmeal-team-detail:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -20px;
+    width: 94%;
+    height: 20px;
+    background-color: #f8f8f8;
+    z-index: -1;
+}
+.hotmeal-team-detail-text {
+    padding: 32px 30px 0px 0px;
+    background-color: #ffffff;
+}
+.hotmeal-team-detail-text h2 {
+    font-size: 18px;
+    margin: 0px 0px 5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.hotmeal-team-detail-text > span {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 0px 12px;
+}
+.hotmeal-team-option { margin: 0px 0px 10px;}
+.hotmeal-team-option li {
+    float: left;
+    list-style: none;
+    margin: 0px 33px 5px 0px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.hotmeal-team-option li:last-child { margin-right: 0px;}
+.hotmeal-team-option li a i,.hotmeal-team-option li span i { margin: 0px 12px 0px 0px;}
+.hotmeal-team-option li span { color: #222222;}
+.hotmeal-team-detail-text p {
+    margin: 0px 0px 14px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+}
+.hotmeal-team-detail-text .hotmeal-shop-social { margin: 8px 0px 0px;}
+.hotmeal-team-detail-text .hotmeal-shop-social ul li a {
+    height: 40px;
+    width: 40px;
+    padding: 6px 0px 0px;
+}
+.hotmeal-team-detail-text .hotmeal-shop-social ul li a:before { width: 30px;}
+.hotmeal-team-detail-text .hotmeal-shop-social ul li a:after { height: 30px;}
+.hotmeal-team-detail-text .hotmeal-shop-social ul li a .btn-shape:before { width: 30px;}
+.hotmeal-team-detail-text .hotmeal-shop-social ul li a .btn-shape:after { height: 30px;}
+.hotmeal-team-detail-text .hotmeal-shop-social ul li a:hover .btn-shape:before {
+    right: 100%;
+    margin: 0px -30px 0px 0px;
+}
+.hotmeal-team-detail-text .hotmeal-shop-social ul li a:hover:before {
+    left: 100%;
+    margin: 0px 0px 0px -30px;
+}
+.hotmeal-team-detail-text .hotmeal-shop-social ul li a:hover .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -30px;
+}
+.hotmeal-team-detail-text .hotmeal-shop-social ul li a:hover:after {
+    top: 100%;
+    margin: -30px 0px 0px;
+}
+/*Career*/
+.hotmeal-team-career,.hotmeal-team-skills {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 18px;
+}
+.hotmeal-team-career > p {
+    margin: 0px 0px 22px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+}
+.hotmeal-team-career ul li {
+    list-style: none;
+    position: relative;
+    padding: 0px 0px 22px 51px;
+}
+.hotmeal-team-career ul li:before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 0px;
+    height: 100%;
+    width: 2px;
+    border-left: 2px dashed #999999;
+    opacity: 0.2;
+}
+.hotmeal-team-career ul li:last-child:before { content: none;}
+.hotmeal-team-career ul li > span {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.hotmeal-team-career ul li > span:before {
+    position: absolute;
+    content: '';
+    left: 5px;
+    top: 5px;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+.hotmeal-team-career ul li h6 {
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0px 0px 18px;
+    letter-spacing: 0.6px;
+}
+.hotmeal-team-career ul li p {
+    margin: 0px 0px 0px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+}
+.hotmeal-team-skills .skillst > span {
+    float: left;
+    margin: 0px 0px 11px;
+    font-size: 15px;
+    color: #222222;
+}
+.skillst {
+    float: left;
+    width: 100%;
+    margin-bottom: 42px;
+    position: relative;
+}
+.bar-container {
+    width: 100%;
+    float: left;
+    position:relative;
+    border-radius: 3px;
+    background: url("images/skills-shape-two.png");
+}
+.bar-container .bar {
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+    background: url("images/skills-shape-one.png");
+}
+.bar-container .bar small {
+    position: absolute;
+    right: 0px;
+    top: -40px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #ffffff;
+    padding: 3px 9px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.20);
+}
+.bar-container .bar small:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: -7px;
+    border-top: 8px solid #ffffff;
+    border-left: 9px solid transparent;
+}
+.skillst .count{
+    float: right;
+    font-size: 12px;
+    color:#272727;
+    margin: -27px 0px 0px 0px;
+}
+/*skills-logo*/
+.skills-logo,.skills-logo li a,.skills-logo li a img {
+    float: left;
+    width: 100%;
+}
+.skills-logo li a { box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+.skills-logo { margin: 0px -10px;}
+.skills-logo li {
+    list-style: none;
+    float: left;
+    width: 33.333%;
+    padding: 0px 10px;
+    margin: 0px 0px 20px;
+}
+.hotmeal-related-team { margin: 0px 0px 10px;}
+/*hotmeal-team-list-text*/
+.hotmeal-team-list figure > a,.hotmeal-team-list figure a img,.hotmeal-team-list-wrap {
+    float: left;
+    width: 100%;
+}
+.hotmeal-team-list-wrap {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.hotmeal-team-list figure {
+    float: left;
+    width: 247px;
+    margin: 0px;
+}
+.hotmeal-team-list figure ~ .hotmeal-team-list-text {
+    margin: 0px 0px 0px 247px;
+    padding: 12px 0px 0px 23px;
+}
+.hotmeal-team-list-text h2 {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+.hotmeal-team-list-text > span {
+    font-size: 15px;
+    margin: 0px 0px 11px;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+.hotmeal-team-list-text p {
+    line-height: 26px;
+    margin: 0px 0px 25px;
+    letter-spacing: 0.5px;
+}
+.hotmeal-team-list-text .hotmeal-learn-btn:after { height: 26px;}
+.hotmeal-team-list-text .hotmeal-learn-btn .btn-shape:after { height: 26px;}
+.hotmeal-team-list-text .hotmeal-learn-btn {
+    padding: 4px 21px 3px;
+    float: none;
+    display: inline-block;
+}
+.hotmeal-team-list ul li:hover .hotmeal-learn-btn:before {
+    left: 100%;
+    margin: 0px 0px 0px -74%;
+}
+.hotmeal-team-list ul li:hover .hotmeal-learn-btn:after {
+    top: 100%;
+    margin: -26px 0px 0px
+}
+.hotmeal-team-list ul li:hover .hotmeal-learn-btn .btn-shape:before {
+    right: 100%;
+    margin: 0px -74% 0px 0%;
+}
+.hotmeal-team-list ul li:hover .hotmeal-learn-btn .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -26px
+}
+.hotmeal-team-list figure > a { position: relative;}
+.hotmeal-team-list figure > a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.hotmeal-team-list ul li:hover figure a:before { opacity: 0.9;}
+.hotmeal-team-list figure figcaption {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    margin: 0px 0px -29px;
+    bottom: 0%;
+    opacity: 0;
+    text-align: center;
+}
+.hotmeal-team-list ul li:hover figure figcaption {
+    bottom: 50%;
+    opacity: 1;
+}
+/*ABOUT Us*/
+.hotmeal-about-text,.about-thumb {
+    float: left;
+    width: 100%;
+}
+.hotmeal-about-text .hotmeal-fancy-title {
+    text-align: left;
+    margin: 0px 0px 18px;
+}
+.hotmeal-about-text p {
+    margin: 0px 0px 14px;
+    line-height: 26px;
+}
+.hotmeal-about-text h5 {
+    margin: 3px 0px 0px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.hotmeal-about-text > span { font-size: 12px;}
+.img-one {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 322px;
+    height: 302px;
+}
+.img-two {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 346px;
+    height: 287px;
+}
+@media (min-width: 1200px) and (max-width: 1500px) { .img-one { left: -138px;}}
+/*hotmeal-special-recipies*/
+.hotmeal-special-recipies,.hotmeal-recipies-tabs,.hotmeal-recipies-list {
+    float: left;
+    width: 100%;
+}
+.hotmeal-recipies-text,.hotmeal-recipies-img,.hotmeal-recipies-img img {
+    float: left;
+    width: 50%;
+}
+.hotmeal-recipies-img img { margin: -70px 0px 0px;}
+.hotmeal-special-recipies {
+    box-shadow: 0 0 10px rgba(0,0,0,0.10);
+    padding: 31px 0px 28px 30px;
+}
+.hotmeal-recipies-tabs { padding: 19px 0px 0px;}
+.hotmeal-recipies-tabs .nav-tabs {
+    float: left;
+    border: none;
+    border-radius: 0px;
+}
+.hotmeal-recipies-tabs .nav-tabs li {
+    list-style: none;
+    line-height: 1;
+    margin: 0 30px 10px 0;
+    text-align: center;
+    position: relative;
+}
+.hotmeal-recipies-tabs .nav-tabs li:last-child { margin: 0px;}
+.hotmeal-recipies-tabs .nav-tabs > li.active > a,
+.hotmeal-recipies-tabs .nav-tabs > li.active > a:hover,
+.hotmeal-recipies-tabs .nav-tabs > li.active > a:focus {
+    color: #ffffff;
+    border: none;
+    background-color: transparent;
+    font-weight: 400;
+    border: 1px dashed;
+}
+.hotmeal-recipies-tabs .nav-tabs li a {
+    float: left;
+    padding: 12px 30px 11px;
+    letter-spacing: 0.6px;
+    position: relative;
+    border: none;
+    margin: 0px;
+    color: #555;
+    border-radius: 0px;
+    border: 1px dashed #999;
+    text-transform: uppercase;
+}
+.hotmeal-recipies-tabs .nav-tabs li a i {
+    font-size: 16px;
+    margin: 0px 8px 0px 0px;
+}
+.hotmeal-recipies-tabs .tab-content {
+    display: inline-block;
+    width: 100%;
+    padding-top: 13px;
+}
+#quick-menu{
+    background-color:floralwhite
+}
+.hotmeal-recipies-tabs .tab-content .comment-respond { margin: 0px 0px 14px;}
+/*.hotmeal-recipies-list*/
+.hotmeal-recipies-text p {
+    margin: 0px 0px 14px;
+    letter-spacing: 0.5px;
+}
+.hotmeal-recipies-list li {
+    float: left;
+    list-style: none;
+    margin: 0px 0px 9px;
+    width: 50%;
+    color: #222222;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 0px 0px 0px 30px;
+    position: relative;
+}
+.hotmeal-recipies-list li:before {
+    content: "\f046";
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    font-weight: 400;
+}
+.hotmeal-error-page {
+    width: 83.333%;
+    margin: 0 auto;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.15);
+    padding: 75px 70px 72px 40px;
+}
+.hotmeal-error-text {
+    float: left;
+    width: 45%;
+    padding: 38px 0 0 0;
+}
+.hotmeal-error-text h2 {
+    font-size: 120px;
+    color: #b99563;
+    font-weight: 600;
+    margin: 0 0px 5px;
+    line-height: 0.9;
+    letter-spacing: 6px;
+}
+.hotmeal-error-text h3 {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 20px; 
+}
+.hotmeal-error-text p {
+    margin: 0 0 33px;
+    letter-spacing: 0.5px;
+}
+.hotmeal-error-btn i {
+    float: right;
+    margin: 3px 0px 0px 17px;
+    font-size: 12px;
+}
+.hotmeal-error-btn:hover i { color: #b99563; }
+.hotmeal-error-btn {
+    float: left;
+    padding: 9px 20px 11px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #555555;
+    position: relative;
+}
+.hotmeal-error-btn:hover  { color: #b99563; }
+.hotmeal-error-btn:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 74%;
+    height: 1px;
+    background-color: #999999;
+}
+.hotmeal-error-btn:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 26px;
+    background-color: #999999;
+}
+.hotmeal-error-btn:hover:before {
+    left: 100%;
+    margin: 0px 0px 0px -74%;
+    background-color: #b99563;
+}
+.hotmeal-error-btn:hover:after {
+    top: 100%;
+    margin: -26px 0px 0px;
+    background-color: #b99563;
+}
+.hotmeal-error-btn:hover small:before {
+    right: 100%;
+    margin: 0px -74% 0px 0%;
+    background-color: #b99563;
+}
+.hotmeal-error-btn:hover small:after {
+    bottom: 100%;
+    margin: 0px 0px -26px;
+    background-color: #b99563;
+}
+
+
+.hotmeal-error-btn small {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+}
+.hotmeal-error-btn small:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 74%;
+    height: 1px;
+    background-color: #999999;
+}
+.hotmeal-error-btn small:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 1px;
+    height: 26px;
+    background-color: #999999;
+}
+.hotmeal-error-thumb {
+    float: right;
+    width: 41.66666667%;
+    text-align: center; 
+}
+.hotmeal-error-thumb img { display: inline-block; }
+/*search result*/
+.hotmeal-search-page {
+    text-align: center;
+    margin: 0 auto 40px;
+    width: 66.66666667%;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.15);
+    padding: 102px 0px 100px;
+    background-image: url("extra-images/search-pic.jpg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+.hotmeal-search-text {
+    display: inline-block;
+    width: 59%;
+}
+.hotmeal-search-text h1 {
+    font-size: 30px;
+    color: #b99563; 
+    margin: 0px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+.hotmeal-search-text h2 {
+    margin: 0px 0px 19px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #222222;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    line-height: 1;
+}
+.hotmeal-search-text p {
+    display: inline-block;
+    letter-spacing: 0.4px;
+    width: 75%;
+    margin: 0 0 23px;
+}
+.hotmeal-search-text form {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.hotmeal-search-text form input[type="text"] {
+    float: left;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px dashed #999;
+    color: #555;
+    font-size: 11px;
+    padding-left: 15px;
+}
+.hotmeal-search-text form label {
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    margin: 0px;
+}
+.hotmeal-search-text form label input[type="submit"] {
+    float: right;
+    height: 34px;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: none;
+    padding: 0 14px 0 0;
+    color: #b99563;
+}
+.hotmeal-search-text .hotmeal-error-btn {
+    display: inline-block;
+    float: none;
+}
+/*price plan*/
+.hotmeal-price-plan {
+    float: left;
+    width: 100%;
+}
+.hotmeal-price-plan > ul { margin: 0 -12px;}
+.hotmeal-price-plan > ul > li {
+    display: inline-block;
+    list-style: none;
+    width: 33.333%;
+    padding: 0 12px;
+    margin-bottom: 30px;
+    margin-right: -4px;
+    vertical-align: top;
+}
+.hotmeal-price-plan > ul > li:hover .hotmeal-pricing-text { box-shadow: 0px 5px 15px rgba(0,0,0,0.15);}
+.hotmeal-pricing-text {
+    float: left;
+    width: 100%;
+    text-align: center;
+    border: 1px dashed #999;
+    padding: 17px 30px 30px;
+}
+.hotmeal-pricing-text h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0px 0px 19px;
+    color: #b99563;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.hotmeal-pricing-text h3 {
+    color: #555555;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0px 0 12px;
+    padding: 20px 0px 3px;
+    border-bottom: 1px dashed #999999;
+    border-top: 1px dashed #999999;
+    letter-spacing: 1.7px;
+}
+.hotmeal-pricing-text h3 small {
+    font-size: 40px;
+    display: inline-block;
+    margin: 0px 2px 0px 0px;
+}
+.hotmeal-pricing-text h3 span {
+    font-size: 30px;
+    margin-top: 14px;
+}
+.hotmeal-price-list {
+    float: left;
+    width: 100%;
+    padding: 31px 0 0px;
+    margin-bottom: 0px;
+}
+.hotmeal-price-list > ul {
+    float: left;
+    width: 100%;
+    padding: 0px 0px 27px;
+    margin: 0px 0px 30px;
+    border-bottom: 1px dashed #999999;
+}
+.hotmeal-price-list > ul > li {
+    float: left;
+    width: 100%;
+    list-style: none;
+    font-size: 16px;
+    margin: 0 0 15px;
+    letter-spacing: 0.5px;
+}
+.hotmeal-price-plan .hotmeal-learn-btn { float: none; display: inline-block;}
+.hotmeal-price-plan .hotmeal-learn-btn:after { height: 26px;}
+.hotmeal-price-plan .hotmeal-learn-btn .btn-shape:after { height: 26px;}
+.hotmeal-price-plan .hotmeal-learn-btn { padding: 7px 22px 5px;}
+.hotmeal-price-plan ul li:hover .hotmeal-learn-btn:before {
+    left: 100%;
+    margin: 0px 0px 0px -74%;
+}
+.hotmeal-price-plan ul li:hover .hotmeal-learn-btn:after {
+    top: 100%;
+    margin: -26px 0px 0px
+}
+.hotmeal-price-plan ul li:hover .hotmeal-learn-btn .btn-shape:before {
+    right: 100%;
+    margin: 0px -74% 0px 0%;
+}
+.hotmeal-price-plan ul li:hover .hotmeal-learn-btn .btn-shape:after {
+    bottom: 100%;
+    margin: 0px 0px -26px
+}
+/*price plan*/
+.hotmeal-priceplan-text {
+    background-color: #222222;
+    float: left;
+    text-align: center;
+}
+.hotmeal-priceplan-text h2 {
+    color: #dddddd;
+    margin: 0px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    padding: 9px 0px 11px;
+    font-size: 26px;
+}
+.hotmeal-priceplan-heading {
+    float: left;
+    background-color: #b99563;
+    width: 100%;
+    padding: 16px 0 4px 0;
+}
+.hotmeal-priceplan-heading h3 {
+    display: inline-block;
+    font-size: 40px;
+    margin: 0px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 1;
+}
+.hotmeal-priceplan-heading h3 small {
+    color: #222222;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+}
+.hotmeal-priceplan-heading h3 span {
+    font-size: 20px;
+    float: right;
+    line-height: 1;
+    margin-top: 14px;
+}
+.hotmeal-priceplan-list {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 30px 30px 40px;
+}
+.hotmeal-priceplan-list ul {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 27px;
+}
+.hotmeal-priceplan-list > ul > li {
+    display: block;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    padding: 12px 0 14px 0;
+    color: #aaaaaa;
+}
+.hotmeal-priceplan-list > ul > li:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 140px;
+    height: 1px; 
+    border-bottom: dashed;
+    margin-left: -70px;  
+    border-color: #444444;
+    border-width: 3px;  
+}
+.hotmeal-priceplan { padding: 20px 0px 0px;}
+.hotmeal-priceplan-list > ul > li:last-child:before { content: none; }
+.hotmeal-price-plan .hotmeal-learn-btn { padding: 7px 22px 5px;}
+.hotmeal-price-plan ul li.active .hotmeal-learn-btn .btn-shape:after,
+.hotmeal-price-plan ul li.active .hotmeal-learn-btn .btn-shape:before,
+.hotmeal-price-plan ul li.active .hotmeal-learn-btn:after,
+.hotmeal-price-plan ul li.active .hotmeal-learn-btn:before { background-color: #222222;}
+.hotmeal-price-plan ul li.active:hover .hotmeal-learn-btn .btn-shape:after,
+.hotmeal-price-plan ul li.active:hover .hotmeal-learn-btn .btn-shape:before,
+.hotmeal-price-plan ul li.active:hover .hotmeal-learn-btn:after,
+.hotmeal-price-plan ul li.active:hover .hotmeal-learn-btn:before { background-color: #ffffff;}
+.hotmeal-price-plan ul li.active .hotmeal-learn-btn { color: #222222;}
+.hotmeal-price-plan ul li.active:hover .hotmeal-learn-btn { color: #ffffff;}
+.hotmeal-price-plan > ul > li.active { margin-top: -20px; }
+.hotmeal-price-plan > ul > li.active .hotmeal-priceplan-heading { background-color: #222222;}
+.hotmeal-price-plan > ul > li.active .hotmeal-priceplan-list { padding: 35px 30px 50px; }
+.hotmeal-price-plan > ul > li.active .hotmeal-priceplan-text h3 small { color: #b99563; }
+.hotmeal-price-plan > ul > li.active .hotmeal-priceplan-text { background-color: #b99563; }
+.hotmeal-price-plan > ul > li.active .hotmeal-priceplan-text h2 { color: #222222; padding: 20px 0 22px; } 
+.hotmeal-price-plan > ul > li.active .hotmeal-priceplan-heading h3 { color: #b99563; }
+.hotmeal-price-plan > ul > li.active .hotmeal-priceplan-list > ul > li:before { border-color: #a08156; }
+.hotmeal-price-plan > ul > li.active .hotmeal-priceplan-list > ul > li { color: #222222; }
+
+/*faq*/
+.hotmeal-faq-subheader .hotmeal-subheader-text {
+    padding-bottom: 187px;
+    background-image: url("extra-images/faq-subheader-img.jpg");
+}
+.hotmeal-faq-full { padding-top: 0;}
+.hotmeal-faq-wrap {
+    float: left;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: -120px;
+    padding: 20px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.15);
+}
+.hotmeal-faq {
+    float: left;
+    width: 100%;
+    padding: 100px 72px 50px 72px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #999999;
+}
+.hotmeal-faq-collapse {
+    float: left;
+    width: 100%;
+}
+.hotmeal-faq-accordion .panel-default > .panel-heading {
+    background-color: #ffffff;
+    position: relative;
+    padding: 0px;
+}
+.hotmeal-faq-accordion .panel {
+    border: 1px dashed #999;
+    border-radius: none;
+    position: relative;
+}
+.hotmeal-faq-accordion.panel-group .panel-heading + .panel-collapse > .panel-body { border: none; }
+.panel-heading { border-radius: 0px; }
+.hotmeal-faq-accordion.panel-group .panel + .panel { margin-top: 30px; }
+.hotmeal-faq-accordion .panel-title > a {
+    border: #222222;
+    font-size: 15px;
+    color: #b99563;
+    display: block;
+    letter-spacing: 0.9px;
+    padding: 11px 20px 14px 30px;
+}
+.hotmeal-faq-accordion .panel-body { padding: 4px 25px 7px 30px; }
+.hotmeal-faq-accordion .panel-body p {
+    font-size: 14px;
+    margin: 0px 0px 16px;
+    letter-spacing: 0.2px;
+}
+.hotmeal-faq-accordion .panel-title > a:before,
+.hotmeal-faq-accordion .panel-title > .collapsed:before {
+    content: "\f106";
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    font-family: 'FontAwesome';
+}
+.hotmeal-faq-accordion .panel-title > .collapsed:before { content: "\f107"; }
+.hotmeal-faq-accordion .panel-default .collapsed { color: #222222; }
+/*contact us*/
+.hotmeal-subheader-map {
+    float: left;
+    width: 100%;
+}
+.hotmeal-subheader-map #map {
+    width: 100%;
+    height: 502px;
+}
+.hotmeal-contact-padding { padding-top: 0; }
+.hotmeal-contact-us {
+    float: left;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.15);
+    padding: 50px 30px 20px 30px;
+    margin-top: -100px;
+}
+.hotmeal-contact-info {
+    float: left;
+    width: 100%;
+}
+.hotmeal-contact-info > ul { margin: 0 -15px; }
+.hotmeal-contact-info ul li {
+    float: left;
+    width: 33.333%;
+    list-style: none;
+    padding: 0 15px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.hotmeal-contact-info ul li:hover .hotmeal-contact-info-wrap i {
+    background-color: #b99563;
+    color: #ffffff;
+}
+.hotmeal-contact-info-wrap {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 48px 0 21px 0;
+    line-height: 1;
+    position: relative;
+    margin: 29px 0 0 0;
+}
+.hotmeal-contact-info-wrap i {
+    position: absolute;
+    left: 50%;
+    top: -29px;
+    color: #b99563;
+    font-size: 30px;
+    margin-left: -29px;
+    background-color: #ffffff;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #aaaaaa;
+    padding: 15px 0 0 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.10);
+}
+.hotmeal-contact-info-wrap h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px 0px 9px;
+    letter-spacing: 0.6px;
+}
+.hotmeal-contact-info-wrap a {
+    display: block;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+}
+.hotmeal-contact-info-wrap p {
+    display: inline-block;
+    margin: 0px;
+    line-height: 20px;
+    width: 70%;
+    letter-spacing: 0.6px;
+}
+.hotmeal-contact-info-wrap:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 88%;
+    height: 1px;
+    background-color: #999999;
+}
+.hotmeal-contact-info-wrap:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 100px;
+    background-color: #999999;
+}
+.hotmeal-contact-info-wrap:hover:before {
+    left: 100%;
+    margin: 0px 0px 0px -88%;
+    background-color: #b99563;
+}
+.hotmeal-contact-info-wrap:hover:after {
+    top: 100%;
+    margin: -100px 0px 0px;
+    background-color: #b99563;
+}
+.hotmeal-contact-info ul li:hover small:before {
+    right: 100%;
+    margin: 0px -88% 0px 0%;
+    background-color: #b99563;
+}
+.hotmeal-contact-info ul li:hover small:after {
+    bottom: 100%;
+    margin: 0px 0px -100px;
+    background-color: #b99563;
+}
+.hotmeal-contact-info ul li small {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+.hotmeal-contact-info-wrap small:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 88%;
+    height: 1px;
+    background-color: #999999;
+}
+.hotmeal-contact-info-wrap small:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 1px;
+    height: 100px;
+    background-color: #999999;
+}
+/*coontact form*/
+.hotmeal-contact-form form,.hotmeal-contact-form,.hotmeal-contact-form ul li input[type="text"],
+.hotmeal-contact-form ul li input[type="email"],.hotmeal-contact-form ul li.full textarea {
+    float: left;
+    width: 100%;
+}
+.hotmeal-contact-form form ul { margin: 0 -15px;}
+.hotmeal-contact-form ul li {
+    float: left;
+    list-style: none;
+    width: 33.333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.hotmeal-contact-form ul li input[type="text"],
+.hotmeal-contact-form ul li input[type="email"],
+.hotmeal-contact-form ul li.full textarea {
+    height: 46px;
+    background-color: #ffffff;
+    border: 1px dashed #999999;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #555555;
+}
+.hotmeal-contact-form ul li.full { width: 100%; }
+.hotmeal-contact-form ul li.full textarea {
+    height: 146px;
+    padding-top: 10px;
+    color: #000000;
+}
+.hotmeal-contact-form ul li label input[type="submit"] {
+    display: inline-block;
+    background-color: #ffffff;
+    border: none;
+    color: #555555;
+    font-size: 14px;
+    padding: 7px 26px 5px;
+}
+.hotmeal-contact-form ul li label {
+    float: left;
+    margin: 0px;
+    position: relative;
+    text-align: center;
+}
+.hotmeal-contact-form ul li label:hover input[type="submit"] { color: #b99563;}
+.hotmeal-contact-form ul li label:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 74%;
+    height: 1px;
+    background-color: #999999;
+}
+.hotmeal-contact-form ul li label:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 24px;
+    background-color: #999999;
+}
+.hotmeal-contact-form ul li label:hover:before {
+    left: 100%;
+    margin: 0px 0px 0px -74%;
+    background-color: #b99563;
+}
+.hotmeal-contact-form ul li label:hover:after {
+    top: 100%;
+    margin: -24px 0px 0px;
+    background-color: #b99563;
+}
+.hotmeal-contact-form ul li label:hover small:before {
+    right: 100%;
+    margin: 0px -74% 0px 0%;
+    background-color: #b99563;
+}
+.hotmeal-contact-form ul li label:hover small:after {
+    bottom: 100%;
+    margin: 0px 0px -24px;
+    background-color: #b99563;
+}
+.hotmeal-contact-form ul li label small {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.hotmeal-contact-form ul li label small:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 74%;
+    height: 1px;
+    background-color: #999999;
+}
+.hotmeal-contact-form ul li label small:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 1px;
+    height: 24px;
+    background-color: #999999;
+}
+
+/*form*/
+.error-msg{background:#ff0000;color:#ffffff;}
+.error-msg i{color:#ffffff;}
+.success-msg{background:#D4FECC;color:#5A974F;}
+.success-msg i{color:#5A974F;}
+.spam-error-msg{background:#FEFCCB;color:#8F9031;}
+.spam-error-msg i{color:#8F9031; }
+.error-msg,.success-msg,.spam-error-msg{float:left;padding:7px 20px;width:100%;font-style:normal;border-radius:4px;}
+.error-msg i,.success-msg i,.spam-error-msg i{margin-right:8px;float:left;font-size:16px;margin-top: 6px;}
+.output_message { float: left; width: 70%; padding-left: 20px; }
+
+
+

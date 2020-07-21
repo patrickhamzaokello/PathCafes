@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	 <meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	 <title>PCC | Menu</title>
+
+	 <!-- Css Files -->
+	 <link href="css/bootstrap.css" rel="stylesheet">
+	 <link href="css/font-awesome.css" rel="stylesheet">
+	 <link href="css/flaticon.css" rel="stylesheet">
+	 <link href="css/slick-slider.css" rel="stylesheet">
+	 <link href="css/fancybox.css" rel="stylesheet">
+	 <link href="style.css" rel="stylesheet">
+	 <link href="css/color.css" rel="stylesheet">
+	 <link href="css/responsive.css" rel="stylesheet">
+	 
+
+	 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	 <!--[if lt IE 9]>
+		 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	 <![endif]-->
+	</head>
+	<body>
+	 
+	 <!--// Main Wrapper \\-->
+	 <div class="hotmeal-main-wrapper">
+
+	<!--// Header \\-->
+	<header id="hotmeal-header" class="hotmeal-header-one">
+		<div class="hotmeal-main-header">
+			<div class="container">
+				<div class="row">
+					<aside class="col-md-2"> <a href="index-2.html" class="logo"><img src="images/logo.png" alt=""></a> </aside>
+					<aside class="col-md-10">
+						<!--// Navigation \\-->
+						<a href="#menu" class="menu-link active"><span></span></a>
+						<nav id="menu" class="menu navbar navbar-default">
+							<ul class="level-1 navbar-nav">
+								<li><a href="index-2.html">Home</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+								<li class="active"><a href="menu.html">Menu</a></li>
+								
+								<li><a href="#">Our Gift shop</a><span class="has-subnav"><i class="fa fa-angle-down"></i></span>
+									<ul class="sub-menu level-2">
+										
+										<li><a href="shop-list.html">Shop List <i class=" fa fa-angle-right"></i></a><span class="has-subnav"><i class="fa fa-angle-down"></i></span>
+											<ul class="sub-menu">
+												<li><a href="shop-list-wls.html">Shop List W/L/S</a></li>
+											</ul>
+										</li>
+										
+									</ul>
+								</li>
+								
+								<li><a href="#">Pages</a><span class="has-subnav"><i class="fa fa-angle-down"></i></span>
+									<ul class="sub-menu level-2">
+										<li><a href="reservations.html">Reservations</a></li>
+										<li><a href="about-us.html">About Us</a></li>
+										<li><a href="gallery.html">Gallery</a></li>
+										<li><a href="contact-us.html">Contact Us</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<!--// Navigation \\-->
+						<ul class="hotmeal-user-list">
+							<li><a href="#" class="fa fa-shopping-bag"><span>0</span></a>
+								<div class="hotmeal-cart-box"> <p>No products in the cart.</p> </div>
+							</li>
+							<li><a href="#" class="fa fa-search" data-toggle="modal" data-target="#searchmodal"></a></li>
+						</ul>
+					</aside>
+			 	</div>
+			</div>
+		</div>
+	</header>
+	<!--// Header \\-->
+
+	<!--// SubHeader \\-->
+	<div class="hotmeal-subheader">
+		<span class="hotmeal-subheader-transparent"></span>
+		<div class="hotmeal-subheader-text">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-12">
+	                	<span>Menu</span>
+                		<h1>Our Menu</h1>
+                		<p>Sed vulputate elementum aliquam. Nunc vel efficitur ante. Ut gravida nulla id ornare sodales.</p>
+                	</div>
+                </div>
+            </div>
+        </div>
+        <div class="hotmeal-breadcrumb">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-12">
+        				<ul>
+				            <li><a href="index-2.html">Homepage</a></li>
+				            <li class="active">Our Menu</li>
+				        </ul>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+    </div>
+    <!--// SubHeader \\-->
+
+	<!--// Main Content \\-->
+	<div class="hotmeal-main-content">
+
+		<!--// Main Section \\-->
+		<div class="hotmeal-main-section hotmeal-breakfastfull">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-12">
+						<div class="hotmeal-fancy-title">
+							<span>Today’s Menu</span>
+							<h2>Menu on the Hit</h2>
+							<img src="images/fancy-title-img.png" alt="">
+						</div>
+						<div class="hotmeal-filterable hotmeal-breakfast">
+	                        <ul class="filters-buttonone-group">
+	                          	<li><a data-filter="*" class="is-checked" ><i class="icon hotmeal-serve"></i>All Day</a></li>
+	                          	<li><a data-filter=".drinks" href="javascript:void(0)"><i class="icon hotmeal-cocktail"></i>Drinks</a></li>
+						  <li><a data-filter=".breakfast" href="javascript:void(0)"><i class="icon hotmeal-cupcake"></i>Breakfast</a></li>
+						  <li><a data-filter=".burgers-sandwiches" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Burgers & Sandwiches</a></li>
+						  <li><a data-filter=".local-fare" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Local Fare</a></li>
+						  <li><a data-filter=".main-dishes" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Main-Dishes</a></li>
+						  <li><a data-filter=".pizza" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Pizza</a></li>
+						  <li><a data-filter=".bread" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Bread & Bakery</a></li>
+						  <li><a data-filter=".snacks-sides" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Snacks & Sides</a></li>
+	                      	</ul>
+	                  	</div>
+	                  	<div id="menu-color"class="hotmeal-menu hotmeal-menu-list hotmeal-menu-filter hotmeal-breakfast-manu">
+	   						<ul class="row">
+	   							<li class="col-md-6 element-item drinks">
+	   								<div class="hotmeal-menu-list-text" id="menu-item">
+	   									<h5>Soda (Plastic Bottle)</h5>
+	   									<span>UGX 2,500</span>
+	   									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+	   								</div>
+								   </li>
+								<li class="col-md-6 element-item drinks"  >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Water </a></h5>
+										<span>UGX ,000</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item drinks" >
+									<div class="hotmeal-menu-list-text">
+										<h5>Soda </h5>
+										<span>UGX 2,000</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item drinks" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Juice </a></h5>
+										<span>UGX 5,000</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item drinks" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Smoothie </a></h5>
+										<span>UGX 7,000</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item drinks" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Milkshake </a></h5>
+										<span>UGX 8,000</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item drinks" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Coffee </a></h5>
+										<span>UGX 6,000</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+									</div>
+								</li>
+
+	   							<li class="col-md-6 element-item drinks" >
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Tea</a></h5>
+	   									<span>UGX 2,500</span>
+	   									<p>Donec porta magna eget leo molestie, tempus consectetur erat facilisis. Suspendisse justo ante, tempus at nulla eu, </p>
+	   								</div>
+								   </li>
+								   
+								   <li class="col-md-6 element-item drinks" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Chocklate</a></h5>
+										<span>UGX 5,000</span>
+										<p>Donec porta magna eget leo molestie, tempus consectetur erat facilisis. Suspendisse justo ante, tempus at nulla eu, </p>
+									</div>
+								</li>
+	   							<li class="col-md-6 element-item breakfast" >
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Boiled/ Fried Eggs (2)</a></h5>
+	   									<span>UGX 2,000</span>
+	   									<p>Nulla vehicula mattis turpis ut cursus. Nunc in augue nec massa sollicitudin placerat. Proin porttitorac.</p>
+	   								</div>
+								   </li>
+								   <li class="col-md-6 element-item breakfast" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Scrambled Eggs w/Toast</a></h5>
+										<span>UGX 5,000</span>
+										<p>Nulla vehicula mattis turpis ut cursus. Nunc in augue nec massa sollicitudin placerat. Proin porttitorac.</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item breakfast" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Spanish Omelet</a></h5>
+										<span>UGX 6,000</span>
+										<p>Nulla vehicula mattis turpis ut cursus. Nunc in augue nec massa sollicitudin placerat. Proin porttitorac.</p>
+									</div>
+								</li>
+								<li class="col-md-6 element-item breakfast" >
+								   <div class="hotmeal-menu-list-text">
+									   <h5><a href="menu-detail.html">Two Pancakes or Two Waffles</a></h5>
+									   <span>UGX 5,000</span>
+									   <p>Nulla vehicula mattis turpis ut cursus. Nunc in augue nec massa sollicitudin placerat. Proin porttitorac.</p>
+								   </div>
+							   </li>
+
+							   <li class="col-md-6 element-item breakfast" >
+								<div class="hotmeal-menu-list-text">
+									<h5><a href="menu-detail.html">French Toast with Fruit</a></h5>
+									<span>UGX 8,000</span>
+									<p>Nulla vehicula mattis turpis ut cursus. Nunc in augue nec massa sollicitudin placerat. Proin porttitorac.</p>
+								</div>
+							</li>
+							<li class="col-md-6 element-item breakfast" >
+							   <div class="hotmeal-menu-list-text">
+								   <h5><a href="menu-detail.html">Breakfast Burrito</a></h5>
+								   <span>UGX 10,000</span>
+								   <p>Nulla vehicula mattis turpis ut cursus. Nunc in augue nec massa sollicitudin placerat. Proin porttitorac.</p>
+							   </div>
+						   </li>
+
+						   <li class="col-md-6 element-item breakfast" >
+							<div class="hotmeal-menu-list-text">
+								<h5><a href="menu-detail.html">PCC Breakfast Special</a></h5>
+								<span>UGX 15,000</span>
+								<p>Nulla vehicula mattis turpis ut cursus. Nunc in augue nec massa sollicitudin placerat. Proin porttitorac.</p>
+							</div>
+						</li>
+						<li class="col-md-6 element-item breakfast" >
+						   <div class="hotmeal-menu-list-text">
+							   <h5><a href="menu-detail.html">Town Center Rolex</a></h5>
+							   <span>UGX 6,000</span>
+							   <p>Nulla vehicula mattis turpis ut cursus. Nunc in augue nec massa sollicitudin placerat. Proin porttitorac.</p>
+						   </div>
+						   </li>
+						   
+						   <li class="col-md-6 element-item breakfast" >
+							<div class="hotmeal-menu-list-text">
+								<h5><a href="menu-detail.html">Egg Rolls or Chapps</a></h5>
+								<span>UGX 6,000</span>
+								<p>Nulla vehicula mattis turpis ut cursus. Nunc in augue nec massa sollicitudin placerat. Proin porttitorac.</p>
+							</div>
+							</li>
+
+								
+	   						<li class="col-md-6 element-item burgers-sandwiches" >
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Beef Burger</a></h5>
+	   									<span>UGX 12,000</span>
+	   									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+	   								</div>
+							</li>
+
+								<li class="col-md-6 element-item burgers-sandwiches" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Grilled Cheese Sandwiche</a></h5>
+										<span>UGX 10,000</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item burgers-sandwiches" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Pulled Beef Sandwiche</a></h5>
+										<span>UGX 12,000</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+									</div>
+							   	</li>
+
+							   	<li class="col-md-6 element-item burgers-sandwiches" >
+								   <div class="hotmeal-menu-list-text">
+									   <h5><a href="menu-detail.html">Veggie Sandwiche</a></h5>
+									   <span>UGX 8,000</span>
+									   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+								   </div>
+								   </li>
+								   
+								   <li class="col-md-6 element-item burgers-sandwiches" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Egg, Cheese and Tomatoe</a></h5>
+										<span>UGX 12,000</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+									</div>
+							   		</li>
+
+							   	<li class="col-md-6 element-item burgers-sandwiches" >
+								   <div class="hotmeal-menu-list-text">
+									   <h5><a href="menu-detail.html">Chicken w/BBQ Sauce</a></h5>
+									   <span>UGX 16,000</span>
+									   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+								   </div>
+								</li>
+
+								<li class="col-md-6 element-item burgers-sandwiches" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">G-nut Butter and Honey</a></h5>
+										<span>UGX 8,000</span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+									</div>
+							   	</li>
+
+							   	<li class="col-md-6 element-item burgers-sandwiches" >
+								   <div class="hotmeal-menu-list-text">
+									   <h5><a href="menu-detail.html">Serious Salad</a></h5>
+									   <span>UGX 8,000</span>
+									   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+								   </div>
+							  	 </li>
+								   
+
+							<!--LOCAL FARE-->	   
+
+	   							<li class="col-md-6 element-item local-fare" >
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">African Beans and Rice</a></h5>
+	   									<span>UGX  6,000</span>
+	   									<p>Etiam rutrum odio id nunc rutrum fringilla quis non mi. Nam nibh nunc, cursus ac nunc egestas.</p>
+	   								</div>
+								</li>
+
+								<li class="col-md-6 element-item local-fare" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Vegetable, Beef, Chicken or Goat Stew</a></h5>
+										<span>UGX  10,000</span>
+										<p>Etiam rutrum odio id nunc rutrum fringilla quis non mi. Nam nibh nunc, cursus ac nunc egestas.</p>
+									</div>
+								</li>
+
+			
+
+							  	 <li class="col-md-6 element-item local-fare" >
+								   <div class="hotmeal-menu-list-text">
+									   <h5><a href="menu-detail.html">Pan-Fried Beef, Pork</a></h5>
+									   <span>UGX  15,000</span>
+									   <p>Etiam rutrum odio id nunc rutrum fringilla quis non mi. Nam nibh nunc, cursus ac nunc egestas.</p>
+								   </div>
+								   </li>
+								   
+								<li class="col-md-6 element-item local-fare" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Tilapia Fish Fillet</a></h5>
+										<span>UGX  15,000</span>
+										<p>Etiam rutrum odio id nunc rutrum fringilla quis non mi. Nam nibh nunc, cursus ac nunc egestas.</p>
+									</div>
+							  	 </li>
+
+							   <li class="col-md-6 element-item local-fare" >
+								   <div class="hotmeal-menu-list-text">
+									   <h5><a href="menu-detail.html">Whole Fish</a></h5>
+									   <span>UGX  22,000</span>
+									   <p>Etiam rutrum odio id nunc rutrum fringilla quis non mi. Nam nibh nunc, cursus ac nunc egestas.</p>
+								   </div>
+							   </li>
+
+							   <li class="col-md-6 element-item local-fare" >
+								<div class="hotmeal-menu-list-text">
+									<h5><a href="menu-detail.html">Fried Chicken</a></h5>
+									<span>UGX  15,000</span>
+									<p>Etiam rutrum odio id nunc rutrum fringilla quis non mi. Nam nibh nunc, cursus ac nunc egestas.</p>
+								</div>
+							</li>
+
+							<li class="col-md-6 element-item local-fare" >
+								<div class="hotmeal-menu-list-text">
+									<h5><a href="menu-detail.html">Oven Baked Pork</a></h5>
+									<span>UGX  12,000</span>
+									<p>Etiam rutrum odio id nunc rutrum fringilla quis non mi. Nam nibh nunc, cursus ac nunc egestas.</p>
+								</div>
+							</li>
+
+
+
+						<!--MAIN DISHES-->
+								   
+
+	   							<li class="col-md-6 element-item beverage main-dishes" >
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Fish Fingers</a></h5>
+	   									<span>UGX 12,000</span>
+	   									<p>Nullam cursus sapien et enim hendrerit congue. Suspendisse ac urna eget mi varius maximus at auctor risus.</p>
+	   								</div>
+								   </li>
+								   
+								<li class="col-md-6 element-item beverage main-dishes" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Italian Spaghetti with Meatballs</a></h5>
+										<span>UGX 11,000</span>
+										<p>Nullam cursus sapien et enim hendrerit congue. Suspendisse ac urna eget mi varius maximus at auctor risus.</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item beverage main-dishes" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Mustard Baked Chicken</a></h5>
+										<span>UGX 12,000</span>
+										<p>Nullam cursus sapien et enim hendrerit congue. Suspendisse ac urna eget mi varius maximus at auctor risus.</p>
+									</div>
+								</li>
+								
+							   <li class="col-md-6 element-item beverage main-dishes" >
+								   <div class="hotmeal-menu-list-text">
+									   <h5><a href="menu-detail.html">Asian Stir Fry (Beef or Chicken)</a></h5>
+									   <span>UGX 10,000</span>
+									   <p>Nullam cursus sapien et enim hendrerit congue. Suspendisse ac urna eget mi varius maximus at auctor risus.</p>
+								   </div>
+							   </li>
+
+							   <li class="col-md-6 element-item beverage main-dishes" >
+								<div class="hotmeal-menu-list-text">
+									<h5><a href="menu-detail.html">Mexican Burrito</a></h5>
+									<span>UGX 10,000</span>
+									<p>Nullam cursus sapien et enim hendrerit congue. Suspendisse ac urna eget mi varius maximus at auctor risus.</p>
+								</div>
+							</li>
+
+
+					<!--pizza-->
+
+
+	   							<li class="col-md-6 element-item pizza" >
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Cheese pizza</a></h5>
+	   									<span>UGX 12,000</span>
+	   									<p>Suspendisse id elit ligula. Morbi elementum dignissim sagittis. Donec libero ligula, scelerisque at justo a, tempoaugue </p>
+	   								</div>
+								   </li>
+								   
+								<li class="col-md-6 element-item pizza" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Vegetable pizza</a></h5>
+										<span>UGX 12,000</span>
+										<p>Suspendisse id elit ligula. Morbi elementum dignissim sagittis. Donec libero ligula, scelerisque at justo a, tempoaugue </p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item pizza" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Barbequed Chicken pizza</a></h5>
+										<span>UGX 12,000</span>
+										<p>Suspendisse id elit ligula. Morbi elementum dignissim sagittis. Donec libero ligula, scelerisque at justo a, tempoaugue </p>
+									</div>
+								</li>
+								
+							   <li class="col-md-6 element-item pizza" >
+								   <div class="hotmeal-menu-list-text">
+									   <h5><a href="menu-detail.html">Meat pizza</a></h5>
+									   <span>UGX 12,000</span>
+									   <p>Suspendisse id elit ligula. Morbi elementum dignissim sagittis. Donec libero ligula, scelerisque at justo a, tempoaugue </p>
+								   </div>
+							   </li>
+<!--Bread and Bakery-->
+
+	   							<li class="col-md-6 element-item bread" >
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Cinnamon Rolls</a></h5>
+	   									<span>UGX  1,500</span>
+	   									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+	   								</div>
+								</li>
+
+								<li class="col-md-6 element-item bread" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Muffins</a></h5>
+										<span>UGX  1,000</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item bread" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Plain Bun/Rolls</a></h5>
+										<span>UGX  1,500</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item bread" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Toasted Bread</a></h5>
+										<span>UGX  2,000</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item bread" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Soft Tortilla(2)/ chapati (2)</a></h5>
+										<span>UGX  2,000</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item bread" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Ice Cream</a></h5>
+										<span>UGX  2,500</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item bread" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Cookies</a></h5>
+										<span>UGX  1,500</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item bread" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Cake Slice</a></h5>
+										<span>UGX  4,500</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item bread" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html">Fruit Salad</a></h5>
+										<span>UGX  4,000</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+
+
+
+						<!--snacks and sides-->   
+								<li class="col-md-6 element-item snacks-sides" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html"> Soup</a></h5>
+										<span>UGX  6,000</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item snacks-sides" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html"> Side Garden Salad</a></h5>
+										<span>UGX  4,000</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item snacks-sides" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html"> G-nuts</a></h5>
+										<span>UGX  2,000</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item snacks-sides" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html"> Popcorn</a></h5>
+										<span>UGX  2,000</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item snacks-sides" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html"> French Fries with a Side Salad</a></h5>
+										<span>UGX  8,000</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+								<li class="col-md-6 element-item snacks-sides" >
+									<div class="hotmeal-menu-list-text">
+										<h5><a href="menu-detail.html"> Chips with Salsa or Guacamole</a></h5>
+										<span>UGX  8,000</span>
+										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+									</div>
+								</li>
+
+	   						</ul>
+	   					</div>
+					</div>
+
+					<div class="col-md-12">
+				       	<div class="hotmeal-best-offer">
+					        <div class="row">
+						        <div class="col-md-8">
+							        <div class="hotmeal-best-offer-text">
+							           <h2>Today’s Best Offer </h2>
+							           <p>Fusce pulvinar tortor viverra aliquam semper. Cras in sapien ultrices, molestie sapien ac, sodales leo. Aenean ultricies tellus eget sem viverra, eu venenatis ipsum congue. Vivamus malesuada nunc nibh. Aenean eu leo nec sapien ornare luctus et at justo. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+							           <p>Etiam auctor dignissim bibendum. Nunc pulvinar massa nunc, quis pellentesque felis suscipit eu. Phasellus ut ultricies velit. Morbi non nisl condimentum, congue lectus sit amet, aliquet urna. Phasel- lus metus risus, ultricies a arcu vitae, rutrum iaculis dolor.</p>
+							        </div>
+						        </div>
+						        <div class="col-md-4">
+						        	<div class="hotmeal-best-thumb">
+						           		<img src="extra-images/price-thumb.png" alt="">
+						          	</div>
+						        </div>
+					        </div>
+				       	</div>
+				    </div>
+
+				</div>
+			</div>
+		</div>
+		<!--// Main Section \\-->
+
+		<!--// Main Section \\-->
+		<div class="hotmeal-main-section hotmeal-menu-listfull">
+			<span class="menu-list-transperant"></span>
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-12">
+						<div class="hotmeal-fancy-title color">
+							<span>Tasty & Crunchy</span>
+							<h2>Menu Of The Day</h2>
+							<img src="images/fancy-title-img.png" alt="">
+						</div>
+						<div class="hotmeal-filterable">
+	                        <ul class="filters-button-group">
+						<li><a data-filter="*" class="is-checked" ><i class="icon hotmeal-serve"></i>All Day</a></li>
+						<li><a data-filter=".drinks" href="javascript:void(0)"><i class="icon hotmeal-cocktail"></i>Drinks</a></li>
+						<li><a data-filter=".breakfast" href="javascript:void(0)"><i class="icon hotmeal-cupcake"></i>Breakfast</a></li>
+						<li><a data-filter=".burgers-sandwiches" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Burgers & Sandwiches</a></li>
+						<li><a data-filter=".local-fare" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Local Fare</a></li>
+						<li><a data-filter=".main-dishes" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Main-Dishes</a></li>
+						<li><a data-filter=".pizza" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Pizza</a></li>
+						<li><a data-filter=".bread" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Bread & Bakery</a></li>
+						<li><a data-filter=".snacks-sides" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Snacks & Sides</a></li>
+	                      	</ul>
+	                  	</div>
+	                  	<div class="hotmeal-menu hotmeal-menu-list hotmeal-menu-filter">
+	   						<ul class="row">
+	   							<li class="col-md-6 element-item desserts">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Fried Fish With Souce</a></h5>
+	   									<span>$ 35.00</span>
+	   									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item drinks">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Roast Of The Evening</a></h5>
+	   									<span>$ 22.00</span>
+	   									<p>Donec porta magna eget leo molestie, tempus consectetur erat facilisis. Suspendisse justo ante, tempus at nulla eu, </p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item desserts">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Steak Sandwich on Ciabatta Bread</a></h5>
+	   									<span>$ 14.00</span>
+	   									<p>Nulla vehicula mattis turpis ut cursus. Nunc in augue nec massa sollicitudin placerat. Proin porttitorac.</p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item beverage">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Fresh Traditional Cod And Chips</a></h5>
+	   									<span>$ 19.00</span>
+	   									<p>Vestibulum posuere erat ullamcorper metus elementum feugiat maec enas finibus dignissim metus pulvinar pretium.</p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item drinks">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Pan Seared Scallops</a></h5>
+	   									<span>$ 17.00</span>
+	   									<p>Etiam rutrum odio id nunc rutrum fringilla quis non mi. Nam nibh nunc, cursus ac nunc egestas.</p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item beverage drinks">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Spinach Salad</a></h5>
+	   									<span>$ 08.00</span>
+	   									<p>Nullam cursus sapien et enim hendrerit congue. Suspendisse ac urna eget mi varius maximus at auctor risus.</p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item desserts">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Old Fashioned Rice Balls</a></h5>
+	   									<span>$ 09.99</span>
+	   									<p>Suspendisse id elit ligula. Morbi elementum dignissim sagittis. Donec libero ligula, scelerisque at justo a, tempoaugue </p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item beverage">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Italian Spaghetti</a></h5>
+	   									<span>$ 12.00</span>
+	   									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+	   								</div>
+	   							</li>
+	   						</ul>
+	   					</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--// Main Section \\-->
+
+		<!--// Main Section \\-->
+		<div class="hotmeal-main-section hotmeal-dinner-menufull">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-12">
+						<div class="hotmeal-fancy-title">
+							<span>Today’s Menu</span>
+							<h2>Dinner For Today</h2>
+							<img src="images/fancy-title-img.png" alt="">
+						</div>
+						<div class="hotmeal-filterable hotmeal-breakfast">
+	                        <ul class="filters-buttontwo-group">
+	                          	<li><a data-filter="*" class="is-checked" href="javascript:void(0)"><i class="icon hotmeal-serve"></i>All Day</a></li>
+	                          	<li><a data-filter=".beverage" href="javascript:void(0)"><i class="icon hotmeal-cocktail"></i>beverage</a></li>
+	                          	<li><a data-filter=".desserts" href="javascript:void(0)"><i class="icon hotmeal-cupcake"></i>desserts</a></li>
+	                          	<li><a data-filter=".drinks" href="javascript:void(0)"><i class="icon hotmeal-food-1"></i>Drinks</a></li>
+	                      	</ul>
+	                  	</div>
+	                  	<div class="hotmeal-menu hotmeal-menu-list hotmeal-menu-filter hotmeal-dinner-manu">
+	   						<ul class="row">
+	   							<li class="col-md-6 element-item desserts">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Mussels Soup </a></h5>
+	   									<span>$ 35.00</span>
+	   									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra odio. Donec sit amet varius massa.</p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item drinks">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Garden Salad</a></h5>
+	   									<span>$ 22.00</span>
+	   									<p>Donec porta magna eget leo molestie, tempus consectetur erat facilisis. Suspendisse justo ante, tempus at nulla eu, </p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item desserts">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Heirloom Tomato Salad</a></h5>
+	   									<span>$ 14.00</span>
+	   									<p>Nulla vehicula mattis turpis ut cursus. Nunc in augue nec massa sollicitudin placerat. Proin porttitorac.</p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item beverage">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Papaya Salad</a></h5>
+	   									<span>$ 19.00</span>
+	   									<p>Vestibulum posuere erat ullamcorper metus elementum feugiat maec enas finibus dignissim metus pulvinar pretium.</p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item drinks">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Prosciutto & Shaved Pear Salad</a></h5>
+	   									<span>$ 17.00</span>
+	   									<p>Etiam rutrum odio id nunc rutrum fringilla quis non mi. Nam nibh nunc, cursus ac nunc egestas.</p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item beverage drinks">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Wild Arugula Salad</a></h5>
+	   									<span>$ 08.00</span>
+	   									<p>Nullam cursus sapien et enim hendrerit congue. Suspendisse ac urna eget mi varius maximus at auctor risus.</p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item desserts">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Tomato Coconut Soup</a></h5>
+	   									<span>$ 09.99</span>
+	   									<p>Suspendisse id elit ligula. Morbi elementum dignissim sagittis. Donec libero ligula, scelerisque at justo a, tempoaugue </p>
+	   								</div>
+	   							</li>
+	   							<li class="col-md-6 element-item beverage">
+	   								<div class="hotmeal-menu-list-text">
+	   									<h5><a href="menu-detail.html">Italian Spaghetti</a></h5>
+	   									<span>$ 12.00</span>
+	   									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar porttitor</p>
+	   								</div>
+	   							</li>
+	   						</ul>
+	   					</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--// Main Section \\-->
+
+	</div>
+	<!--// Main Content \\-->
+
+	<!--// Footer \\-->
+	<footer id="hotmeal-footer" class="hotmeal-footer-one">
+		<span class="hotmeal-footer-transparent"></span>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="hotmeal-footer-heading">
+						<a href="index-2.html" class="logo"><img src="images/logo.png" alt=""></a>
+						<p>Sed vulputate elementum aliquam. Nunc vel efficitur ante. Ut gravida nulla id ornare soda les. Aenean aliquam mauris purus, eget mollis lectus sagittis sed. Cras varius est vel mcsasvsa ultricies, ac rutrum urna hendrerit.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--// Footer Widget \\-->
+		<div class="hotmeal-footer-widget">
+			<div class="container">
+				<div class="row">
+
+					<!--// Widget About Us \\-->
+					<aside class="col-md-4 widget widget_latest_post">
+						<h2 class="footer-widget-title">Latest Post</h2>
+						<ul>
+							<li>
+								<h6><a href="blog-detail.html">Fusce pulvinar tortor viverra aliqu</a></h6>
+								<time datetime="2008-02-14 20:00">14 Oct 2017</time>
+							</li>
+							<li>
+								<h6><a href="blog-detail.html">Cras in sapien ultrices, molestie sapien</a></h6>
+								<time datetime="2008-02-14 20:00">28 Nov 2017</time>
+							</li>
+							<li>
+								<h6><a href="blog-detail.html">Aenean ultricies tellus eget sem vive</a></h6>
+								<time datetime="2008-02-14 20:00">03 Dec 2017</time>
+							</li>
+						</ul>
+					</aside>
+					<!--// Widget About Us \\-->
+
+					<!--// Widget Links \\-->
+					<aside class="col-md-4 widget widget_links">
+						<h2 class="footer-widget-title">Useful Links</h2>
+						<ul>
+							<li><a href="404.html">History</a></li>
+							<li><a href="404.html">Services</a></li>
+							<li><a href="404.html">Team & Awards</a></li>
+							<li><a href="404.html">Delivery Methods</a></li>
+							<li><a href="404.html">Community</a></li>
+							<li><a href="404.html">Safety</a></li>
+							<li><a href="404.html">News & Events</a></li>
+							<li><a href="404.html">Sustainability</a></li>
+							<li><a href="404.html">FAQ</a></li>
+							<li><a href="404.html">Portfolio</a></li>
+							<li><a href="404.html">News & Events</a></li>
+							<li><a href="404.html">Safety</a></li>
+						</ul>
+					</aside>
+					<!--// Widget Links \\-->
+
+					<!--// Widget Our Newsletter \\-->
+					<aside class="col-md-4 widget widget_newsletter">
+						<h2 class="footer-widget-title">Our Newsletter</h2>
+						<p>Etiam auctor dignissim bibendum. Nunc pulvinar massa nunc, quis pellentesque.</p>
+						<form>
+							<ul>
+								<li><input type="text" value="Name*" onblur="if(this.value == '') { this.value ='Name*'; }" onfocus="if(this.value =='Name*') { this.value = ''; }"></li>
+								<li><input type="email" value="Email*" onblur="if(this.value == '') { this.value ='Email*'; }" onfocus="if(this.value =='Email*') { this.value = ''; }"></li>
+								<li><label class="submit"><input type="submit" value="Subscribe Now"><span></span></label></li>
+							</ul>
+						</form>
+					</aside>
+					<!--// Widget Our Newsletter \\-->
+
+				</div>
+			</div>
+		</div>
+		<!--// Footer Widget \\-->
+
+		<!--// CopyRight \\-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="hotmeal-copyright">
+						<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<!--// CopyRight \\-->
+
+	</footer>
+	<!--// Footer \\-->
+
+	<div class="clearfix"></div>
+
+	</div>
+	<!--// Main Wrapper \\-->
+
+	<!-- Modal -->
+	<div class="modal fade searchmodal" id="searchmodal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-body">
+				<a href="#" class="hotmeal-close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+				<form>
+					<input type="text" value="Type Your Keyword" onblur="if(this.value == '') { this.value ='Type Your Keyword'; }" onfocus="if(this.value =='Type Your Keyword') { this.value = ''; }">
+					<input type="submit" value="">
+					<i class="fa fa-search"></i>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	 <!-- jQuery (necessary for JavaScript plugins) -->
+	 <script type="text/javascript" src="script/jquery.js"></script>
+	 <script type="text/javascript" src="script/bootstrap.min.js"></script>
+	 <script type="text/javascript" src="script/slick.slider.min.js"></script>
+	 <script type="text/javascript" src="script/fancybox.pack.js"></script>
+	 <script type="text/javascript" src="script/isotope.min.js"></script>
+	 <script type="text/javascript" src="script/progressbar.js"></script>
+	 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+	 <script type="text/javascript" src="script/functions.js"></script>
+
+	</body>
+
+</html>
