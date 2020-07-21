@@ -1,0 +1,289 @@
+/*	Media 768Px Start */
+@media (min-width: 768px) and (max-width: 990px) {
+	.menu.active { width: 260px;}
+	.menu,  .menu > ul ul { margin: 0; max-height: 0; overflow: hidden;}
+	span.has-subnav,a.menu-link { display: block; line-height: 2;}
+	.sub-menu li a { background-color: #fff;}
+	.navbar { padding: 0px; z-index: 999; border-radius: 0px; position: absolute; background-color: #fff; border-top: none; border-bottom: none; left: 0px; top: 122px; margin: 0px;}
+	a.menu-link { text-align: left; float: left; font-weight: bold; font-size: 22px; line-height: 2.2;}
+	a.menu-link span { margin: 12px 30px 9px 0px; }
+	.navbar-nav { margin: 0px; padding-top: 10px; float: left; text-align: left; } .navbar-nav > li > a:before { display: none; }
+	.navbar-nav .sub-menu { border-bottom: none; padding:0px; margin: 0px; float: left; width: 100%; position: relative; opacity: 1; visibility: visible; background-color: transparent; top: 0; }
+	.navbar-nav .sub-menu {
+		transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+        -webkit-transform-origin: 0% 0%;
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        -webkit-transition: all 0s cubic-bezier(0, 0, 0, 0);
+       -moz-transition: all 0s cubic-bezier(0, 0, 0, 0);
+        -ms-transition: all 0s cubic-bezier(0, 0, 0, 0);
+         -o-transition: all 0s cubic-bezier(0, 0, 0, 0);
+            transition: all 0s cubic-bezier(0, 0, 0, 0);
+	}
+	.navbar-nav .sub-menu > li { padding: 0px;}
+	.navbar-nav .sub-menu li a { padding: 6px 20px; color: #222;}
+	.navbar-nav .sub-menu .sub-menu { left: 0px;}
+	.navbar .navbar-collapse { padding: 0px;}
+	.navbar-nav > li > a { float: left; width: 100%; padding: 15px 20px 15px 20px; color: #555555; line-height: 14px;}
+	.navbar-nav > li { width: 100%; float: left; margin: 0px;}
+	.sub-menu .sub-menu { left: 0px;}
+	.navbar-nav > li { padding: 0px;}
+	.navbar-nav > li:first-child { padding-left: 0px;}
+	/* Main Grid */
+	.hotmeal-main-content .col-md-4,.hotmeal-main-content .col-md-3 { float: none; display: inline-block; vertical-align: top; margin-right: -4px; width: 50%; }
+	.hotmeal-main-content .col-md-7,.hotmeal-main-content .col-md-5 { width: 100%; float: left; margin-bottom: 0px; }
+	.col-md-12 { float: left; width: 100%; }
+	/*header*/
+	.hotmeal-banner-caption { display: none;}
+	.logo { text-align: center; margin: 0px 0px 18px;}
+	.hotmeal-user-list li { margin: 8px 0px 0px 39px;}
+	.hotmeal-header-one { padding: 30px 0px 22px;}
+	.hotmeal-service-grid-thumb:before { display: none;}
+	.hotmeal-service > ul > li { display: inline-block; float: none; margin-right: -4px; vertical-align: top; width: 50%;}
+	.hotmeal-menu-listfull { margin-top: 100px;}
+	.hotmeal-menu-listfull,.hotmeal-footer-transparent,.hotmeal-subheader { background-size: cover;}
+	.hotmeal-menu > ul > li { float: none; display: inline-block; margin-right: -4px; vertical-align: top; width: 50%;}
+	.hotmeal-menu-list-text span { float: left; width: 100%;}
+	.hotmeal-testimonial figure ~ .hotmeal-testimonial-text { margin: 0px 0px 0px 300px; padding: 37px 30px 100px;}
+	.hotmeal-testimonial figure { width: 300px;}
+	.modal-dialog,.hotmeal-blog-medium figure,.hotmeal-error-page { width: 100%;}
+	.hotmeal-testimonial .slick-arrow.slick-arrow-left { width: 45%; margin: 0px; right: auto; left: 0px;}
+	.hotmeal-testimonial .slick-dots { width: 100%; bottom: 19px;}
+	.hotmeal-testimonial .slick-arrow { margin: 0 -142px 0 0; bottom: 15px; width: 115px;}
+	.hotmeal-blog-medium .hover-btn { margin: -27px -27px 0px 0px;}
+	.hotmeal-blog-medium-text { margin: 0px; width: 100%;}
+	.hotmeal-footer-widget .widget,.hotmeal-blog > ul > li { float: none; display: inline-block; margin-right: -4px; vertical-align: top; width: 50%;}
+	.hotmeal-footer-heading { width: 80%;}
+	.hotmeal-error-text { width: 55%;}
+	.hotmeal-subheader-text p { width: 57%;}
+	.hotmeal-subheader { padding: 160px 0px 0px;}
+	.hotmeal-price-plan > ul > li,.hotmeal-contact-info ul li { width: 50%;}
+	.about-thumb,.img-one,.img-two { display: none;} { display: none;}
+	.hotmeal-special-recipies { padding: 31px 30px 28px;}
+	.hotmeal-main-content aside.col-md-3 { width: 100%;}
+	.hotmeal-main-content .widget { float: none; display: inline-block; margin-right: 18px; width: 47%; vertical-align: top;}
+	.hotmeal-blog.hotmeal-blog-large > ul > li { width: 100%;}
+	.hotmeal-faq-accordion .panel-title > a { padding: 11px 30px 14px;}
+	.hotmeal-gallery-filterable ul li { margin: 0px 38px;}
+	.hotmeal-best-offer-text { margin: 0px 0px 20px;}
+	.hotmeal-search-page { width: 100%;}
+	.hotmeal-shop-list-text .star-rating { width: 17%;}
+	.hotmeal-team-detail .col-md-4 { width: 40%;}
+	.hotmeal-team-detail .col-md-8 { float: right; width: 60%;}
+	.hotmeal-team-detail-text { padding-bottom: 30px;}
+	.skillst { width: 50%; padding: 0px 10px;}
+	.hotmeal-recipies-text,.hotmeal-recipies-img { width: 100%;}
+	.hotmeal-recipies-img img { margin: 0px;}
+
+
+}
+
+/* Media 420Px Start */
+@media (max-width: 767px) {
+	.menu.active { width: 260px;}
+	.menu,  .menu > ul ul { margin: 0; max-height: 0; overflow: hidden;}
+	span.has-subnav,a.menu-link { display: block; line-height: 2;}
+	.sub-menu li a { background-color: #fff;}
+	.navbar { padding: 0px; z-index: 999; border-radius: 0px; position: absolute; background-color: #fff; border-top: none; border-bottom: none; left: 0px; top: 122px; margin: 0px;}
+	a.menu-link { text-align: left; float: left; font-weight: bold; font-size: 22px; line-height: 2.2;}
+	a.menu-link span { margin: 12px 30px 9px 0px; }
+	.navbar-nav { margin: 0px; padding-top: 10px; float: left; text-align: left; } .navbar-nav > li > a:before { display: none; }
+	.navbar-nav .sub-menu { border-bottom: none; padding:0px; margin: 0px; float: left; width: 100%; position: relative; opacity: 1; visibility: visible; background-color: transparent; top: 0; }
+	.navbar-nav .sub-menu {
+		transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+        -webkit-transform-origin: 0% 0%;
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        -webkit-transition: all 0s cubic-bezier(0, 0, 0, 0);
+       -moz-transition: all 0s cubic-bezier(0, 0, 0, 0);
+        -ms-transition: all 0s cubic-bezier(0, 0, 0, 0);
+         -o-transition: all 0s cubic-bezier(0, 0, 0, 0);
+            transition: all 0s cubic-bezier(0, 0, 0, 0);
+	}
+	.navbar-nav .sub-menu > li { padding: 0px;}
+	.navbar-nav .sub-menu li a { padding: 6px 20px; color: #222;}
+	.navbar-nav .sub-menu .sub-menu { left: 0px;}
+	.navbar .navbar-collapse { padding: 0px;}
+	.navbar-nav > li > a { float: left; width: 100%; padding: 15px 20px 15px 20px; color: #555555; line-height: 14px;}
+	.navbar-nav > li { width: 100%; float: left; margin: 0px;}
+	.sub-menu .sub-menu { left: 0px;}
+	.navbar-nav > li { padding: 0px;}
+	.navbar-nav > li:first-child { padding-left: 0px;}
+	/* Main Grid */
+	.hotmeal-main-content .col-md-4,.hotmeal-main-content .col-md-3{ float: none; display: inline-block; vertical-align: top; margin-right: -4px; width: 50%; }
+	.hotmeal-main-content .col-md-7,.hotmeal-main-content .col-md-5 { width: 100%; float: left; margin-bottom: 0px; }
+	.col-md-12 { float: left; width: 100%; }
+	/*Main Grid*/
+	.hotmeal-header-one { position: relative;}
+	.hotmeal-banner-caption { display: none;}
+	.logo { text-align: center; margin: 0px 0px 18px;}
+	.hotmeal-user-list li { margin: 8px 0px 0px 39px;}
+	.hotmeal-header-one { padding: 30px 0px 22px;}
+	.hotmeal-fancy-title h2 { line-height: 1;}
+	.hotmeal-service-grid-thumb:before { display: none;}
+	.hotmeal-service > ul > li { display: inline-block; float: none; margin-right: -4px; vertical-align: top; width: 50%;}
+	.hotmeal-menu-listfull { margin-top: 100px;}
+	.hotmeal-reserve-table,.hotmeal-table-thumb,.hotmeal-testimonial figure { width: 100%;}
+	.hotmeal-testimonial figure ~ .hotmeal-testimonial-text { float: left; margin: 0px; padding: 25px 10px 50px;}
+	.hotmeal-testimonial .slick-arrow.slick-arrow-left { width: 42%; margin: 0px; right: auto; left: 0px;}
+	.hotmeal-testimonial .slick-dots { width: 100%; bottom: 19px;}
+	.hotmeal-testimonial .slick-arrow { margin: 0 -142px 0 0; bottom: 15px; width: 115px;}
+	.hotmeal-footer-heading,.hotmeal-blog-medium figure { width: 100%;}
+	.hotmeal-footer-widget .widget,.hotmeal-blog > ul > li,.hotmeal-shop > ul > li,
+	.hotmeal-team > ul > li { float: none; display: inline-block; margin-right: -4px; vertical-align: top; width: 50%;}
+	.hotmeal-footer-transparent,.hotmeal-menu-listfull { background-size: cover;}
+	.hotmeal-blog-medium-text { margin: 0px; width: 100%;}
+	.hotmeal-main-content aside.col-md-4 { width: 100%;}
+	.hotmeal-service-grid-text { padding: 49px 22px 23px;}
+	.hotmeal-team-grid-wrap { padding: 15px;}
+	.hotmeal-table-thumb,.hotmeal-error-thumb { display: none;}
+	.hotmeal-filterable ul li { margin: 0px 5px 20px;}
+	.hotmeal-testimonial::before { width: 82%;}
+	.hotmeal-testimonial::after { width: 92%;}
+	.hotmeal-blog-medium .hover-btn { margin: -27px -31px 0px 0px;}
+	.widget_links ul li:hover a { padding: 0px 0px 0px;}
+	.hotmeal-subheader-text p,.hotmeal-error-page,.hotmeal-error-text { width: 100%;}
+	.hotmeal-subheader { padding: 25px 0px 0px;}
+	.img-one,.img-two { display: none;}
+	.hotmeal-price-plan > ul > li,.hotmeal-contact-info ul li { width: 50%;}
+	.hotmeal-pricing-text { padding: 17px 20px 30px;}
+	.hotmeal-about-text { margin: 0px 0px 50px;}
+	.hotmeal-blog-heading h2 { line-height: 1.2;}
+	.hotmeal-social-tag, .hotmeal-blog-social { width: 100%;}
+	.hotmeal-post-tags { text-align: center;}
+	.hotmeal-social-tag a { float: none; display: inline-block; margin: 0px 15px 5px 0px;}
+	.hotmeal-social-tag { margin: 0px 0px 20px;}
+	.hotmeal-blog-social ul { display: inline-block; float: none;}
+	.hotmeal-prev-post, .hotmeal-next-post { padding: 18px 25px 21px;}
+	.hotmeal-related-blog-text h5 { line-height: 1.2;}
+	.text-holder .post-date { padding: 0px 0px 0px 21px;}
+	.text-holder .post-date::before { left: 10px;}
+	.hotmeal-blog.hotmeal-blog-large > ul > li,.hotmeal-contact-info-wrap p { width: 100%;}
+	.hotmeal-main-content aside.col-md-3 { width: 100%;}
+	.hotmeal-main-content .widget { float: none; display: inline-block; margin-right: 15px; width: 46%; vertical-align: top;}
+	.hotmeal-faq-wrap { padding: 10px;}
+	.hotmeal-faq { padding: 100px 10px 50px;}
+	.hotmeal-faq-accordion .panel-title > a::before, .hotmeal-faq-accordion .panel-title > .collapsed::before { right: 7px;}
+	.hotmeal-gallery-filterable ul li { margin: 0px 25px;}
+	.hotmeal-modern-gallery-wrap { padding: 0px 10px;}
+	.hotmeal-best-offer { padding: 47px 20px 28px 20px;}
+	.hotmeal-best-offer-text { margin: 0px 0px 20px;}
+	.hotmeal-price-plan > ul > li.active .hotmeal-priceplan-list { padding: 35px 20px 50px;}
+	.hotmeal-priceplan-list { padding: 30px 20px 40px;}
+	.hotmeal-search-page { width: 100%;}
+	.hotmeal-search-text { width: 95%;}
+	.hotmeal-images-list-layer.slick-slide { padding: 0px 5px;}
+	.star-rating { width: 62px;}
+	.hotmeal-cart-btn { margin: 0px 22px 35px 0px;}
+	.hotmeal-shop-filter { text-align: center;}
+	.hotmeal-shop-filter > span { margin: 0px 0px 10px;}
+	.hotmeal-shop-filter > span,.hotmeal-shop-filter .nav-tabs,.hotmeal-shop-filter form { margin-bottom: 10px;}
+	.hotmeal-shop-list figure { width: 100%;}
+	.hotmeal-shop-list figure ~ .hotmeal-shop-list-text { float: left; margin: 0px;}
+	.hotmeal-shop-list-text .star-rating { width: 70px;}
+	.hotmeal-team-detail-text { padding: 32px 20px 30px;}
+	.hotmeal-team-detail .col-md-4 { width: 100%;}
+	.hotmeal-team-list figure { width: 100%;}
+	.hotmeal-team-list figure ~ .hotmeal-team-list-text { float: left; margin: 0px; padding: 20px 0px 0px;}
+	.hotmeal-team-social li { margin: 0px 7px;}
+	.hotmeal-recipies-text,.hotmeal-recipies-img { width: 100%;}
+	.hotmeal-recipies-img img { margin: 0px;}
+
+}
+
+/* Media 300Px Start */
+@media (max-width: 480px) {
+/*main grid*/
+	.hotmeal-main-content .col-md-4,.hotmeal-main-content .col-md-3,.hotmeal-main-content .col-md-6 { margin-right: 0px; width: 100%; }
+	/*main grid*/
+	.hotmeal-flavours-list figure ~ .hotmeal-flavours-list-text { padding: 7px 0px 0px 103px;}
+	.hotmeal-service > ul > li,.hotmeal-reserve-table form ul li,
+	.hotmeal-footer-widget .widget { width: 100%;}
+	.hotmeal-filterable ul li { margin: 0px 7px 20px;}
+	.hotmeal-menu-list-text { padding: 23px 20px;}
+	.hotmeal-menu-list-text span { float: left; width: 100%;}
+	.hotmeal-testimonial-wrap { float: left; width: 100%;}
+	.hotmeal-testimonial::after { width: 90%;}
+	.hotmeal-testimonial::before { width: 80%;}
+	.hotmeal-partner ul li { width: 50%;}
+	.hotmeal-partner ul li:nth-child(2n) { border-right: none;}
+	.hotmeal-partner ul li:last-child:before,
+	.hotmeal-partner ul li:nth-last-of-type(2):before { content: none;}
+	.hotmeal-partner ul li:nth-last-of-type(3):before,
+	.hotmeal-partner ul li:nth-last-of-type(4):before { content: '';}
+	.hotmeal-team-grid-wrap { padding: 20px;}
+	.hotmeal-testimonial .slick-arrow.slick-arrow-left { width: 115px;}
+	.widget_links ul li:hover a { padding-left: 10px;}
+	.hotmeal-error-page { padding: 75px 20px 72px 20px;}
+	.hotmeal-error-text h2 { font-size: 98px;}
+	.hotmeal-error-text h3 { line-height: 1.2;}
+	.hotmeal-price-plan > ul > li,.hotmeal-recipies-list li,.hotmeal-blog > ul > li,.hotmeal-contact-info ul li { width: 100%;}
+	.hotmeal-special-recipies { padding: 31px 20px 28px;}
+	.hotmeal-pricing-text { padding: 17px 30px 30px;}
+	blockquote { padding: 32px 20px 50px;}
+	blockquote::after { bottom: 20px;}
+	.comment-list li figure ~ .text-holder { float: left; padding: 20px 0px 0px;}
+	.comment-list .children > li .thumb-list { padding: 0px 0px 17px 0px;}
+	.text-holder .post-date { padding: 0px 0px 0px 20px;}
+	.comment-respond form p,.hotmeal-prenxt-post ul li,.hotmeal-contact-form ul li { width: 100%;}
+	.text-holder .post-date::before { left: 8px;}
+	.hotmeal-main-content .widget { width: 100%; margin-right: 0px;}
+	.hotmeal-pagination > ul > li { margin: 0 4px 10px 0;}
+	.hotmeal-gallery-filterable ul li { margin: 0px 20px;}
+	.hotmeal-reservation-info ul li h6,.hotmeal-search-text p,.hotmeal-shop > ul > li,.hotmeal-team > ul > li { width: 100%;}
+	.hotmeal-shop-detail { padding: 41px 20px 45px;}
+	.star-rating { width: 23%;}
+	.hotmeal-shop-tabs .nav-tabs li { margin: 0px 8px 0px 0px;}
+	.hotmeal-shop-list-text .star-rating { width: 29%;}
+	.hotmeal-shop-filter > span,.hotmeal-shop-filter .nav-tabs,.hotmeal-shop-filter form { float: none; display: inline-block;}
+	.hotmeal-team-detail::before { width: 91%;}
+	.hotmeal-team-detail::after { width: 81%;}
+	.hotmeal-team-social li { margin: 0px 10px;}
+	.hotmeal-recipies-img img  { width: 100%;}
+
+
+}
+
+/* Media 940Px Start */
+@media screen and (min-width: 991px) and (max-width: 1054px) {
+	.navbar-nav > li { margin: 0px 10px;}
+	.hotmeal-banner-caption .col-md-6 { width: 100%;}
+	.hotmeal-banner-text h3,.hotmeal-banner-text strong { display: none;}
+	.hotmeal-banner-text { width: 52%;}
+	.hotmeal-flavours-list figure ~ .hotmeal-flavours-list-text { padding: 7px 0px 0px 105px;}
+	.hotmeal-service-grid-text { padding: 49px 30px 23px;}
+	.hotmeal-menu-list-text span { float: left; width: 100%;}
+	.hotmeal-team-social li { margin: 0px 7px;}
+	.hotmeal-testimonial .slick-arrow { margin: 0px -230px 0px 0px;}
+	.hotmeal-testimonial .slick-dots { width: 55%;}
+	.hotmeal-testimonial .slick-arrow.slick-arrow-left { margin: 0px -142px 0px 0px;}
+	.hotmeal-testimonial::before { width: 93%;}
+	.hotmeal-blog-medium-text { margin: 50px -225px 0 0px;}
+	.hotmeal-blog-medium figure { width: 380px;}
+	.hotmeal-menu-listfull,.hotmeal-footer-transparent { background-size: cover;}
+	.hotmeal-footer-heading { width: 63%;}
+	.hotmeal-error-page { padding: 75px 50px 72px 40px;}
+	.hotmeal-error-text { width: 50%;}
+	.img-one { left: -171px;}
+	.hotmeal-main-content .widget { padding: 30px 20px 33px;}
+	.hotmeal-related-blog-text h5 { font-size: 17px; line-height: 1.2;}
+	.hotmeal-contact-info-wrap p { width: 74%;}
+	.hotmeal-faq-accordion .panel-title > a { padding: 11px 30px 14px;}
+	.hotmeal-gallery-filterable ul li { margin: 0px 50px;}
+	.hotmeal-search-page { width: 81%;}
+	.hotmeal-shop-detail { padding: 41px 35px 45px;}
+	.star-rating { width: 14%;}
+	.hotmeal-images-list-layer.slick-slide { padding: 0px 5px;}
+	.hotmeal-shop-grid-text .star-rating { width: 43%;}
+	.hotmeal-shop-list-text .star-rating { width: 18%;}
+	.hotmeal-team-detail-text { padding-bottom: 30px;}
+	.hotmeal-recipies-img img { margin: 0px;}
+}

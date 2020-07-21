@@ -1,0 +1,73 @@
+ /* ThemeColor One */
+.navbar-nav .sub-menu li a:hover,.navbar-nav .sub-menu li a i,.hotmeal-banner-text h1,.hotmeal-banner-btn:hover,
+.hotmeal-fancy-title span,.hotmeal-learn-btn:hover,.hotmeal-service-grid-text i,.hotmeal-filterable ul li a.is-checked,
+.hotmeal-menu-list-text span,.hotmeal-team-grid-text span,.submit:hover input[type="submit"],.hotmeal-testimonial-text i,
+.hotmeal-info span,.hotmeal-testimonial .slick-arrow:hover,.hotmeal-blog-medium-text span,.widget_latest_post time,
+.hotmeal-blog-medium .hotmeal-blog-medium-layer:hover .hotmeal-simple-btn,.hotmeal-blog ul li:hover .hotmeal-simple-btn,
+.hotmeal-copyright p a,.hotmeal-breadcrumb ul li.active,.hotmeal-subheader-text span,.hotmeal-blog-option li,
+.hotmeal-blog-option li a,blockquote span,blockquote:after,.hotmeal-social-tag a:hover,.hotmeal-prev-post a,.hotmeal-next-post a,
+.hotmeal-related-option li a,.comment-reply-link,.widget_search form label:before,.widget_popular_post time,.hotmeal-cart-btn:hover,
+.widget_cetagories ul li:hover a,.widget_cetagories ul li:hover a span,.widget-deals-text span,.hotmeal-blog-grid-text span,
+.hotmeal-blog ul li:hover .hotmeal-learn-btn,.hotmeal-gallery-filterable ul li:hover a,.hotmeal-gallery-filterable ul li a.is-checked,
+.star-rating-box:before,.hotmeal-shop-text > span,.hotmeal-product-tags a:hover,.hotmeal-shop-social ul li a:hover,.hotmeal-team-detail-text > span,
+.hotmeal-shop-tabs .nav-tabs > li.active > a,.hotmeal-shop-tabs .nav-tabs > li.active > a:hover,.hotmeal-shop-tabs .nav-tabs > li.active > a:focus,
+.hotmeal-shop-grid-text > span,.hotmeal-shop-filter .nav-tabs > li.active > a,.hotmeal-shop-filter .nav-tabs > li.active > a:hover,
+.hotmeal-shop-filter .nav-tabs > li.active > a:focus,.hotmeal-shop-list-text > span,.hotmeal-shop ul li:hover .hotmeal-learn-btn,
+.hotmeal-team-option li:hover a,.hotmeal-team-option li:hover span,.bar-container .bar small,.hotmeal-team-list-text > span,
+.hotmeal-team-list ul li:hover .hotmeal-learn-btn,.hotmeal-about-text > span,.hotmeal-recipies-tabs .nav-tabs > li.active > a,
+.hotmeal-recipies-tabs .nav-tabs > li.active > a:hover,.hotmeal-recipies-tabs .nav-tabs > li.active > a:focus,
+.hotmeal-recipies-list li:before,.hotmeal-price-plan ul li:hover .hotmeal-learn-btn {
+    color: #b99563;
+}
+
+.hotmeal-user-list li a span,.hotmeal-banner-btn:hover:before,.hotmeal-banner-btn:hover:after,.hotmeal-learn-btn:hover:before,
+.hotmeal-banner-btn:hover span:before,.hotmeal-banner-btn:hover span:after,.hotmeal-learn-btn:hover:after,.submit:hover span:after,
+.hotmeal-learn-btn:hover .btn-shape:before,.hotmeal-learn-btn:hover .btn-shape:after,.hotmeal-team-grid figure > a:before,
+.hotmeal-service-grid ul li:hover .hotmeal-service-grid-text i,.submit:hover:before,.submit:hover:after,.submit:hover span:before,
+.hotmeal-testimonial .slick-dots li.slick-active button,.hotmeal-blog-medium .hotmeal-blog-medium-layer:hover .hotmeal-simple-btn:before,
+.hotmeal-blog ul li:hover .hotmeal-simple-btn:before,.hotmeal-blog-medium figure a:before,.footer-widget-title:before,
+.hotmeal-blog-medium-slide .slick-dots li.slick-active button,.hotmeal-blog-option li:before,.hotmeal-social-tag a:hover:before,
+.hotmeal-social-tag a:hover:after,.hotmeal-social-tag a:hover .btn-shape:before,.hotmeal-social-tag a:hover .btn-shape:after,
+.hotmeal-prenxt-post ul li:hover .btn-shape:after,.hotmeal-prenxt-post ul li:hover .btn-shape:before,.hotmeal-section-heading:before,
+.hotmeal-prenxt-post ul li:hover .hotmeal-prev-post:after,.hotmeal-prenxt-post ul li:hover .hotmeal-next-post:after,
+.hotmeal-prenxt-post ul li:hover .hotmeal-prev-post:before,.hotmeal-prenxt-post ul li:hover .hotmeal-next-post:before,
+.hotmeal-related-blog figure a:before,.widget-author-text h5:before,.widget-heading:before,.hotmeal-blog-grid figure a:before,
+.hotmeal-pagination > ul > li > .current:before,.hotmeal-pagination > ul > li > .current:after,.hotmeal-pagination > ul > li > .current .btn-shape:before,
+.hotmeal-pagination > ul > li > .current .btn-shape:after,.hotmeal-pagination > ul > li:hover > a:after,.hotmeal-blog-large figure a:before,
+.hotmeal-pagination > ul > li:hover > span:after,.hotmeal-pagination > ul > li:hover > a:before,.hotmeal-pagination > ul > li:hover > span:before,
+.hotmeal-pagination > ul > li:hover > a .btn-shape:before,.hotmeal-pagination > ul > li:hover span .btn-shape:before,.hotmeal-cart-btn:hover .btn-shape:before,
+.hotmeal-pagination > ul > li:hover > a .btn-shape:after,.hotmeal-pagination > ul > li:hover span .btn-shape:after,.hotmeal-cart-btn:hover:after,
+.hotmeal-blog ul li:hover .hotmeal-learn-btn:before,.hotmeal-blog ul li:hover .hotmeal-learn-btn:after,.hotmeal-modern-gallery figure > a:before,
+.hotmeal-blog ul li:hover .hotmeal-learn-btn .btn-shape:before,.hotmeal-blog ul li:hover .hotmeal-learn-btn .btn-shape:after,
+.hotmeal-gallery-filterable ul li a:before,.hotmeal-shop-thumb .slick-dots li.slick-active button,.hotmeal-cart-btn:hover:before,
+.hotmeal-cart-btn:hover .btn-shape:after,.hotmeal-shop-social ul li a:hover .btn-shape:before,.hotmeal-shop-social ul li a:hover .btn-shape:after,
+.hotmeal-shop-social ul li a:hover:before,.hotmeal-shop-social ul li a:hover:after,.hotmeal-shop-grid figure > a:before,
+.hotmeal-shop-grid figure > span,.hotmeal-shop-list figure a:before,.hotmeal-shop ul li:hover .hotmeal-learn-btn:before,
+.hotmeal-shop ul li:hover .hotmeal-learn-btn:after,.hotmeal-shop ul li:hover .hotmeal-learn-btn .btn-shape:before,
+.hotmeal-shop ul li:hover .hotmeal-learn-btn .btn-shape:after,.hotmeal-team-career ul li > span:before,.hotmeal-team-list figure > a:before,
+.hotmeal-team-list ul li:hover .hotmeal-learn-btn:before,.hotmeal-team-list ul li:hover .hotmeal-learn-btn:after,
+.hotmeal-team-list ul li:hover .hotmeal-learn-btn .btn-shape:before,.hotmeal-team-list ul li:hover .hotmeal-learn-btn .btn-shape:after,
+.hotmeal-price-plan ul li:hover .hotmeal-learn-btn:before,.hotmeal-price-plan ul li:hover .hotmeal-learn-btn:after,.widget_tags a:hover,
+.hotmeal-price-plan ul li:hover .hotmeal-learn-btn .btn-shape:before,.hotmeal-price-plan ul li:hover .hotmeal-learn-btn .btn-shape:after,
+.hotmeal-pagination > ul > li:hover > a,.hotmeal-pagination > ul > li:hover > span,.hotmeal-pagination > ul > li > .current {
+    background-color: #b99563;
+}
+
+.hotmeal-service-grid ul li:hover .hotmeal-service-grid-text i,.hotmeal-images-list-layer.slick-slide.slick-current.slick-active span,
+.hotmeal-shop-tabs .nav-tabs > li.active > a,.hotmeal-shop-tabs .nav-tabs > li.active > a:hover,.hotmeal-shop-tabs .nav-tabs > li.active > a:focus,
+.hotmeal-recipies-tabs .nav-tabs > li.active > a,.hotmeal-recipies-tabs .nav-tabs > li.active > a:hover,.hotmeal-recipies-tabs .nav-tabs > li.active > a:focus,
+.hotmeal-contact-info ul li:hover .hotmeal-contact-info-wrap i,.widget_tags a:hover {
+    border-color: #b99563;
+}
+ {
+	border-left-color: #b99563;
+}
+ {
+	border-right-color: #b99563;
+}
+{
+	border-top-color: #b99563;
+}
+.navbar-nav .sub-menu,.comment-reply-link {
+	border-bottom-color: #b99563;
+}
